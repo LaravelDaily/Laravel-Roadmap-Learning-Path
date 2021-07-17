@@ -1,0 +1,363 @@
+-- -------------------------------------------------------------
+-- TablePlus 3.12.6(366)
+--
+-- https://tableplus.com/
+--
+-- Database: roadmap
+-- Generation Time: 2021-07-17 11:19:54.2270
+-- -------------------------------------------------------------
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+
+CREATE TABLE `levels` (
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `position` int(11) NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `deleted_at` timestamp NULL DEFAULT NULL,
+  `description` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE `link_topic` (
+  `link_id` bigint(20) unsigned NOT NULL,
+  `topic_id` bigint(20) unsigned NOT NULL,
+  KEY `link_id_fk_4355454` (`link_id`),
+  KEY `topic_id_fk_4355454` (`topic_id`),
+  CONSTRAINT `link_id_fk_4355454` FOREIGN KEY (`link_id`) REFERENCES `links` (`id`) ON DELETE CASCADE,
+  CONSTRAINT `topic_id_fk_4355454` FOREIGN KEY (`topic_id`) REFERENCES `topics` (`id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE `link_types` (
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `deleted_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE `links` (
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `url` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `deleted_at` timestamp NULL DEFAULT NULL,
+  `type_id` bigint(20) unsigned DEFAULT NULL,
+  `position` int(11) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  KEY `type_fk_4355451` (`type_id`),
+  CONSTRAINT `type_fk_4355451` FOREIGN KEY (`type_id`) REFERENCES `link_types` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=83 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE `projects` (
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `description` longtext COLLATE utf8mb4_unicode_ci,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `deleted_at` timestamp NULL DEFAULT NULL,
+  `level_id` bigint(20) unsigned DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `level_fk_4355474` (`level_id`),
+  CONSTRAINT `level_fk_4355474` FOREIGN KEY (`level_id`) REFERENCES `levels` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE `topics` (
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `deleted_at` timestamp NULL DEFAULT NULL,
+  `topic_id` bigint(20) unsigned DEFAULT NULL,
+  `level_id` bigint(20) unsigned DEFAULT NULL,
+  `position` int(11) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  KEY `topic_fk_4355444` (`topic_id`),
+  KEY `level_fk_4355464` (`level_id`),
+  CONSTRAINT `level_fk_4355464` FOREIGN KEY (`level_id`) REFERENCES `levels` (`id`),
+  CONSTRAINT `topic_fk_4355444` FOREIGN KEY (`topic_id`) REFERENCES `topics` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=80 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+INSERT INTO `levels` (`id`, `name`, `position`, `created_at`, `updated_at`, `deleted_at`, `description`) VALUES
+(1, 'Beginner', 1, '2021-07-10 19:33:21', '2021-07-13 08:23:22', NULL, 'Create your very first simple Laravel project'),
+(2, '(WORK IN PROGRESS) Mid', 3, '2021-07-10 19:33:27', '2021-07-17 07:04:09', NULL, ''),
+(3, '(TO BE DONE LATER) Senior', 4, '2021-07-10 19:33:33', '2021-07-17 07:04:20', NULL, ''),
+(4, 'Advanced Beginner', 2, '2021-07-13 08:23:32', '2021-07-13 08:23:32', NULL, 'The goal of this level is to find the first job or freelance gig');
+
+INSERT INTO `link_topic` (`link_id`, `topic_id`) VALUES
+(1, 1),
+(2, 4),
+(3, 3),
+(4, 4),
+(5, 8),
+(6, 8),
+(7, 14),
+(8, 15),
+(9, 37),
+(10, 37),
+(11, 16),
+(12, 26),
+(13, 26),
+(14, 27),
+(15, 28),
+(16, 28),
+(17, 19),
+(18, 22),
+(19, 23),
+(20, 23),
+(21, 23),
+(22, 24),
+(23, 18),
+(24, 34),
+(25, 33),
+(26, 39),
+(27, 10),
+(28, 11),
+(29, 13),
+(30, 36),
+(31, 60),
+(32, 59),
+(33, 21),
+(34, 21),
+(35, 50),
+(36, 51),
+(37, 52),
+(38, 53),
+(39, 53),
+(40, 30),
+(41, 30),
+(42, 61),
+(43, 61),
+(44, 61),
+(45, 61),
+(46, 62),
+(47, 63),
+(48, 63),
+(49, 64),
+(50, 64),
+(51, 70),
+(52, 76),
+(53, 69),
+(54, 69),
+(55, 54),
+(56, 56),
+(57, 56),
+(58, 57),
+(59, 57),
+(60, 58),
+(61, 58),
+(62, 58),
+(63, 58),
+(64, 58),
+(65, 66),
+(66, 67),
+(67, 67),
+(68, 68),
+(69, 77),
+(70, 77),
+(71, 77),
+(72, 77),
+(73, 77),
+(74, 72),
+(75, 73),
+(76, 72),
+(77, 78),
+(78, 78),
+(79, 78),
+(80, 79),
+(81, 79),
+(82, 78);
+
+INSERT INTO `link_types` (`id`, `name`, `created_at`, `updated_at`, `deleted_at`) VALUES
+(1, 'Article', '2021-07-10 19:33:39', '2021-07-10 19:33:39', NULL),
+(2, 'Course', '2021-07-10 19:33:43', '2021-07-10 19:33:43', NULL),
+(3, 'Official Docs', '2021-07-10 19:33:49', '2021-07-10 19:33:49', NULL),
+(4, 'Video', '2021-07-17 06:08:55', '2021-07-17 06:08:55', NULL);
+
+INSERT INTO `links` (`id`, `title`, `url`, `created_at`, `updated_at`, `deleted_at`, `type_id`, `position`) VALUES
+(1, 'Laravel Routing - Full Documentation Page', 'https://laravel.com/docs/8.x/routing', '2021-07-12 12:30:45', '2021-07-13 09:20:26', '2021-07-13 09:20:26', 3, 0),
+(2, 'Laravel Resource Controllers', 'https://laravel.com/docs/8.x/controllers#resource-controllers', '2021-07-12 12:32:40', '2021-07-12 12:32:40', NULL, 3, 0),
+(3, 'Basic Controllers with Routes', 'https://laravel.com/docs/8.x/controllers#basic-controllers', '2021-07-12 12:35:32', '2021-07-12 12:35:32', NULL, 3, 0),
+(4, 'Simple Laravel CRUD with Resource Controllers [digitalocean.com]', 'https://www.digitalocean.com/community/tutorials/simple-laravel-crud-with-resource-controllers', '2021-07-12 12:36:45', '2021-07-12 12:36:45', NULL, 1, 0),
+(5, 'View Routes', 'https://laravel.com/docs/8.x/routing#view-routes', '2021-07-13 09:09:49', '2021-07-13 09:09:49', NULL, 3, 2),
+(6, 'Basic Routing', 'https://laravel.com/docs/8.x/routing#basic-routing', '2021-07-13 09:10:11', '2021-07-13 09:10:11', NULL, 3, 1),
+(7, 'Laravel Blade - Full Documentation Page', 'https://laravel.com/docs/8.x/blade', '2021-07-13 09:15:35', '2021-07-13 09:20:24', '2021-07-13 09:20:24', 3, 0),
+(8, 'Blade: Displaying Data', 'https://laravel.com/docs/8.x/blade#displaying-data', '2021-07-13 09:16:16', '2021-07-13 09:16:23', NULL, 3, 0),
+(9, 'Blade: If-Statements', 'https://laravel.com/docs/8.x/blade#if-statements', '2021-07-13 09:18:04', '2021-07-13 09:18:04', NULL, 3, 0),
+(10, 'Blade Loops', 'https://laravel.com/docs/8.x/blade#loops', '2021-07-13 09:18:26', '2021-07-13 09:18:26', NULL, 3, 0),
+(11, 'Blade: Layout Using Template Inheritance', 'https://laravel.com/docs/8.x/blade#layouts-using-template-inheritance', '2021-07-13 09:19:46', '2021-07-13 09:19:46', NULL, 3, 0),
+(12, 'Laravel Breeze Official Documentation', 'https://laravel.com/docs/8.x/starter-kits#laravel-breeze', '2021-07-13 09:21:02', '2021-07-13 09:21:02', NULL, 3, 0),
+(13, 'Laravel UI: Official Github Page', 'https://github.com/laravel/ui', '2021-07-13 09:21:27', '2021-07-13 09:21:27', NULL, 3, 0),
+(14, 'Retrieving the Authenticated User', 'https://laravel.com/docs/8.x/authentication#retrieving-the-authenticated-user', '2021-07-13 09:22:41', '2021-07-13 09:22:41', NULL, 3, 0),
+(15, 'Determining If The Current User Is Authenticated', 'https://laravel.com/docs/8.x/authentication#determining-if-the-current-user-is-authenticated', '2021-07-13 09:23:33', '2021-07-13 09:24:15', NULL, 3, 0),
+(16, 'Blade: Authentication Directives', 'https://laravel.com/docs/8.x/blade#authentication-directives', '2021-07-13 09:24:00', '2021-07-13 09:24:00', NULL, 3, 0),
+(17, 'Database Migrations', 'https://laravel.com/docs/8.x/migrations', '2021-07-13 09:25:36', '2021-07-13 09:25:36', NULL, 3, 0),
+(18, 'Eloquent: Getting Started', 'https://laravel.com/docs/8.x/eloquent', '2021-07-13 09:26:26', '2021-07-13 09:26:26', NULL, 3, 0),
+(19, 'Eloquent Relationships: One-to-Many', 'https://laravel.com/docs/8.x/eloquent-relationships#one-to-many', '2021-07-13 09:31:41', '2021-07-13 09:32:47', NULL, 3, 0),
+(20, 'Eloquent Relationships: BelongsTo', 'https://laravel.com/docs/8.x/eloquent-relationships#one-to-many-inverse', '2021-07-13 09:32:08', '2021-07-13 09:32:08', NULL, 3, 0),
+(21, 'Eloquent Relationships: Many-to-Many', 'https://laravel.com/docs/8.x/eloquent-relationships#many-to-many', '2021-07-13 09:32:36', '2021-07-13 09:32:36', NULL, 3, 0),
+(22, 'Relationships: Eager Loading', 'https://laravel.com/docs/8.x/eloquent-relationships#eager-loading', '2021-07-13 09:34:00', '2021-07-13 09:34:00', NULL, 3, 0),
+(23, 'Laravel Validation', 'https://laravel.com/docs/8.x/validation', '2021-07-13 09:34:42', '2021-07-13 09:34:42', NULL, 3, 0),
+(24, 'Filesystem: File Uploads', 'https://laravel.com/docs/8.x/filesystem#file-uploads', '2021-07-13 09:35:38', '2021-07-13 09:36:02', NULL, 3, 0),
+(25, 'Database Pagination', 'https://laravel.com/docs/8.x/pagination', '2021-07-13 09:37:07', '2021-07-13 09:37:07', NULL, 3, 0),
+(26, 'Route Parameters', 'https://laravel.com/docs/8.x/routing#route-parameters', '2021-07-14 08:31:33', '2021-07-14 08:31:33', NULL, 3, 0),
+(27, 'Names Routes', 'https://laravel.com/docs/8.x/routing#named-routes', '2021-07-17 05:59:20', '2021-07-17 05:59:20', NULL, 3, 0),
+(28, 'Route Groups', 'https://laravel.com/docs/8.x/routing#route-groups', '2021-07-17 05:59:43', '2021-07-17 05:59:43', NULL, 3, 0),
+(29, 'Route Model Binding', 'https://laravel.com/docs/8.x/routing#route-model-binding', '2021-07-17 06:00:09', '2021-07-17 06:00:09', NULL, 3, 0),
+(30, 'Redirect Routes', 'https://laravel.com/docs/8.x/routing#redirect-routes', '2021-07-17 06:00:35', '2021-07-17 06:00:47', NULL, 3, 0),
+(31, 'Defining Middleware', 'https://laravel.com/docs/8.x/middleware#defining-middleware', '2021-07-17 06:01:32', '2021-07-17 06:01:32', NULL, 3, 0),
+(32, 'Protecting Routes', 'https://laravel.com/docs/8.x/authentication#protecting-routes', '2021-07-17 06:02:21', '2021-07-17 06:02:21', NULL, 3, 0),
+(33, 'Database: Seeding', 'https://laravel.com/docs/8.x/seeding', '2021-07-17 06:03:10', '2021-07-17 06:03:10', NULL, 3, 0),
+(34, 'Defining Model Factories', 'https://laravel.com/docs/8.x/database-testing#defining-model-factories', '2021-07-17 06:05:13', '2021-07-17 06:05:13', NULL, 3, 0),
+(35, 'Eloquent: Query Scopes', 'https://laravel.com/docs/8.x/eloquent#query-scopes', '2021-07-17 06:05:41', '2021-07-17 06:05:41', NULL, 3, 0),
+(36, 'Polymorphic Relationships', 'https://laravel.com/docs/8.x/eloquent-relationships#polymorphic-relationships', '2021-07-17 06:06:09', '2021-07-17 06:06:09', NULL, 3, 0),
+(37, 'Accessors & Mutators', 'https://laravel.com/docs/8.x/eloquent-mutators#accessors-and-mutators', '2021-07-17 06:06:34', '2021-07-17 06:06:34', NULL, 3, 0),
+(38, 'Eloquent Collections', 'https://laravel.com/docs/8.x/eloquent-collections', '2021-07-17 06:07:10', '2021-07-17 06:07:10', NULL, 3, 0),
+(39, 'General Laravel Collections', 'https://laravel.com/docs/8.x/collections', '2021-07-17 06:07:45', '2021-07-17 06:07:45', NULL, 3, 0),
+(40, 'Authorization', 'https://laravel.com/docs/8.x/authorization', '2021-07-17 06:08:31', '2021-07-17 06:08:31', NULL, 3, 0),
+(41, 'Laravel Roles and Permissions: All CORE Things You Need To Know', 'https://www.youtube.com/watch?v=kZOgH3-0Bko', '2021-07-17 06:09:17', '2021-07-17 06:09:17', NULL, 4, 0),
+(42, 'Spatie Laravel Permission: Example Project Review', 'https://www.youtube.com/watch?v=NgToi0uiMNQ', '2021-07-17 06:10:21', '2021-07-17 06:10:21', NULL, 4, 0),
+(43, 'Two Best Laravel Packages to Manage Roles/Permissions', 'https://laravel-news.com/two-best-roles-permissions-packages', '2021-07-17 06:10:49', '2021-07-17 06:10:49', NULL, 1, 0),
+(44, 'spatie/laravel-permission', 'https://github.com/spatie/laravel-permission', '2021-07-17 06:11:15', '2021-07-17 06:11:15', NULL, 3, 0),
+(45, 'JosephSilber/bouncer', 'https://github.com/JosephSilber/bouncer', '2021-07-17 06:11:34', '2021-07-17 06:11:34', NULL, 3, 0),
+(46, 'Email Verification', 'https://laravel.com/docs/8.x/verification', '2021-07-17 06:13:07', '2021-07-17 06:13:07', NULL, 3, 0),
+(47, 'File Storage', 'https://laravel.com/docs/8.x/filesystem', '2021-07-17 06:14:32', '2021-07-17 06:14:32', NULL, 3, 0),
+(48, 'Laravel: How to Upload Files to Amazon S3', 'https://www.youtube.com/watch?v=xZQM9q_QxMA', '2021-07-17 06:15:15', '2021-07-17 06:15:15', NULL, 4, 0),
+(49, 'spatie/laravel-medialibrary', 'https://github.com/spatie/laravel-medialibrary', '2021-07-17 06:16:13', '2021-07-17 06:16:13', NULL, 3, 0),
+(50, 'intervention/image', 'https://github.com/Intervention/image', '2021-07-17 06:16:43', '2021-07-17 06:16:43', NULL, 3, 0),
+(51, 'Eloquent: API Resources', 'https://laravel.com/docs/8.x/eloquent-resources', '2021-07-17 06:17:47', '2021-07-17 06:17:47', NULL, 3, 0),
+(52, 'Laravel Sanctum', 'https://laravel.com/docs/8.x/sanctum', '2021-07-17 06:19:12', '2021-07-17 06:19:12', NULL, 3, 0),
+(53, 'API Resource Routes', 'https://laravel.com/docs/8.x/controllers#api-resource-routes', '2021-07-17 06:20:13', '2021-07-17 06:20:13', NULL, 3, 0),
+(54, 'Default Route Files', 'https://laravel.com/docs/8.x/routing#the-default-route-files', '2021-07-17 06:21:04', '2021-07-17 06:21:04', NULL, 3, 0),
+(55, 'Logging', 'https://laravel.com/docs/8.x/logging', '2021-07-17 06:21:56', '2021-07-17 06:21:56', NULL, 3, 0),
+(56, 'Error Handling', 'https://laravel.com/docs/8.x/errors', '2021-07-17 06:22:48', '2021-07-17 06:22:48', NULL, 3, 0),
+(57, 'Exceptions in Laravel: Why/How to Use and Create Your Own', 'https://www.youtube.com/watch?v=RTTXZVIL6tw', '2021-07-17 06:23:53', '2021-07-17 06:23:53', NULL, 4, 0),
+(58, 'Custom HTTP Error Pages', 'https://laravel.com/docs/8.x/errors#custom-http-error-pages', '2021-07-17 06:25:05', '2021-07-17 06:25:05', NULL, 3, 0),
+(59, 'Laravel Error Pages: Change Text or Customize Layouts', 'https://www.youtube.com/watch?v=iMAFUi6Z57k', '2021-07-17 06:25:17', '2021-07-17 06:25:17', NULL, 4, 0),
+(60, 'Bugsnag Laravel', 'https://docs.bugsnag.com/platforms/php/laravel/', '2021-07-17 06:26:09', '2021-07-17 06:26:09', NULL, 3, 0),
+(61, 'Flare Homepage', 'https://flareapp.io/', '2021-07-17 06:26:44', '2021-07-17 06:26:44', NULL, 3, 0),
+(62, 'Sentry Laravel', 'https://docs.sentry.io/platforms/php/guides/laravel/', '2021-07-17 06:27:10', '2021-07-17 06:27:10', NULL, 3, 0),
+(63, 'Rollbar Laravel', 'https://docs.rollbar.com/docs/laravel', '2021-07-17 06:27:34', '2021-07-17 06:27:34', NULL, 3, 0),
+(64, 'Bug Tracking in Laravel: Bugsnag vs Flare [Demo/Review]', 'https://www.youtube.com/watch?v=88UqUXhWwGA', '2021-07-17 06:28:17', '2021-07-17 06:28:17', NULL, 4, 0),
+(65, 'Mail & Mailables', 'https://laravel.com/docs/8.x/mail', '2021-07-17 06:31:48', '2021-07-17 06:31:48', NULL, 3, 0),
+(66, 'How to Send Email From Laravel, and Why We Need 3rd Party Providers For It', 'https://laraveldaily.com/how-to-send-email-from-laravel-and-why-we-need-3rd-party-providers-for-it/', '2021-07-17 06:32:26', '2021-07-17 06:32:26', NULL, 1, 0),
+(67, 'Mail: Drivers Prerequisites', 'https://laravel.com/docs/8.x/mail#driver-prerequisites', '2021-07-17 06:32:55', '2021-07-17 06:32:55', NULL, 3, 0),
+(68, 'Notifications', 'https://laravel.com/docs/8.x/notifications', '2021-07-17 06:33:32', '2021-07-17 06:33:32', NULL, 3, 0),
+(69, 'barryvdh/laravel-debugbar', 'https://github.com/barryvdh/laravel-debugbar', '2021-07-17 06:37:27', '2021-07-17 06:37:27', NULL, 3, 0),
+(70, 'Laravel Telescope', 'https://laravel.com/docs/8.x/telescope', '2021-07-17 06:37:55', '2021-07-17 06:37:55', NULL, 3, 0),
+(71, 'Spatie Ray (Premium Tool)', 'https://myray.app/', '2021-07-17 06:38:52', '2021-07-17 06:38:52', NULL, 3, 0),
+(72, 'Debug Eloquent Queries from API: Laravel Telescope', 'https://www.youtube.com/watch?v=SR3RzIfeozI', '2021-07-17 06:40:46', '2021-07-17 06:40:46', NULL, 4, 0),
+(73, 'Spatie Ray: Laravel Debugging with Pleasure', 'https://www.youtube.com/watch?v=n4pMxyAXeqY', '2021-07-17 06:41:22', '2021-07-17 06:41:22', NULL, 4, 0),
+(74, 'Testing: Getting Started', 'https://laravel.com/docs/8.x/testing', '2021-07-17 06:43:24', '2021-07-17 06:43:24', NULL, 3, 0),
+(75, 'Database Testing', 'https://laravel.com/docs/8.x/database-testing', '2021-07-17 06:44:04', '2021-07-17 06:44:04', NULL, 3, 0),
+(76, 'Laravel: PHPUnit Testing for Beginners', 'https://laraveldaily.teachable.com/p/laravel-phpunit-testing-for-beginners', '2021-07-17 06:44:40', '2021-07-17 06:44:40', NULL, 2, 0),
+(77, 'Deployment', 'https://laravel.com/docs/8.x/deployment', '2021-07-17 06:46:36', '2021-07-17 06:46:36', NULL, 3, 0),
+(78, 'How to Deploy Laravel Projects to Live Server: The Ultimate Guide', 'https://laraveldaily.com/how-to-deploy-laravel-projects-to-live-server-the-ultimate-guide/', '2021-07-17 06:46:59', '2021-07-17 06:46:59', NULL, 1, 0),
+(79, 'What Server is Needed to Deploy Laravel Projects', 'https://laraveldaily.com/what-server-is-needed-to-deploy-laravel-projects/', '2021-07-17 06:47:22', '2021-07-17 06:47:22', NULL, 1, 0),
+(80, 'Git', 'https://git-scm.com/', '2021-07-17 06:47:58', '2021-07-17 06:47:58', NULL, 3, 0),
+(81, 'Git in Laravel. Part 1 - Branches: Main, Develop and Feature', 'https://www.youtube.com/watch?v=AmScEC-_72I', '2021-07-17 06:48:28', '2021-07-17 06:48:28', NULL, 4, 0),
+(82, 'How we Deploy Laravel: Branches, Staging Servers, Forge and Envoyer', 'https://www.youtube.com/watch?v=8DVuVftFZcQ', '2021-07-17 06:49:07', '2021-07-17 06:49:07', NULL, 4, 0);
+
+INSERT INTO `projects` (`id`, `name`, `description`, `created_at`, `updated_at`, `deleted_at`, `level_id`) VALUES
+(1, 'Building a Simple Blog with Authentication', 'Description of the project is coming soon.', '2021-07-13 08:55:14', '2021-07-17 07:04:59', NULL, 1),
+(2, 'Mini CRM', 'Description of the project is coming soon.', '2021-07-17 07:05:21', '2021-07-17 07:05:21', NULL, 4);
+
+INSERT INTO `topics` (`id`, `name`, `created_at`, `updated_at`, `deleted_at`, `topic_id`, `level_id`, `position`) VALUES
+(1, 'Routing and Controllers: Basics', '2021-07-12 12:23:27', '2021-07-13 08:19:39', NULL, NULL, 1, 1),
+(2, 'Database Basics', '2021-07-12 12:23:36', '2021-07-13 08:35:03', NULL, NULL, 1, 4),
+(3, 'Routing to a Single Controller Method', '2021-07-12 12:24:24', '2021-07-12 12:35:40', NULL, 1, 1, 2),
+(4, 'Route Resource and Resourceful Controllers', '2021-07-12 12:24:40', '2021-07-13 09:28:18', NULL, 38, 1, 1),
+(8, 'Callback Functions and Route::view()', '2021-07-13 08:18:23', '2021-07-13 09:08:59', NULL, 1, 1, 1),
+(9, 'Routing Advanced', '2021-07-13 08:24:21', '2021-07-13 08:24:21', NULL, NULL, 4, 0),
+(10, 'Route Naming', '2021-07-13 08:24:40', '2021-07-13 08:24:40', NULL, 9, 4, 1),
+(11, 'Route Groups', '2021-07-13 08:25:06', '2021-07-13 08:25:06', NULL, 9, 4, 2),
+(12, 'Middleware', '2021-07-13 08:25:34', '2021-07-16 08:22:41', NULL, NULL, 4, 0),
+(13, 'Route Model Binding', '2021-07-13 08:28:16', '2021-07-13 08:28:16', NULL, 9, 4, 3),
+(14, 'Blade Basics', '2021-07-13 08:29:19', '2021-07-13 08:29:19', NULL, NULL, 1, 2),
+(15, 'Displaying Variables in Blade', '2021-07-13 08:30:41', '2021-07-13 09:17:32', NULL, 14, 1, 1),
+(16, 'Layout: @include, @extends, @section, @yield', '2021-07-13 08:31:25', '2021-07-13 08:31:25', NULL, 14, 1, 3),
+(17, 'Blade Components', '2021-07-13 08:32:20', '2021-07-14 12:12:07', NULL, 45, 2, 1),
+(18, 'Forms, Validation and Form Requests', '2021-07-13 08:33:59', '2021-07-13 09:29:15', NULL, 38, 1, 2),
+(19, 'Database Migrations', '2021-07-13 08:35:16', '2021-07-13 08:35:16', NULL, 2, 1, 1),
+(20, 'Database Advanced', '2021-07-13 08:35:39', '2021-07-14 12:32:06', NULL, NULL, 4, 0),
+(21, 'Database Seeders and Factories', '2021-07-13 08:36:26', '2021-07-13 08:36:26', NULL, 20, 2, 1),
+(22, 'Basic Eloquent Model and MVC: Controller -> Model -> View', '2021-07-13 08:38:52', '2021-07-13 08:39:06', NULL, 2, 1, 2),
+(23, 'Eloquent Relationships: belongsTo / hasMany / belongsToMany', '2021-07-13 08:40:34', '2021-07-13 08:40:34', NULL, 2, 1, 3),
+(24, 'Eager Loading and N+1 Query Problem', '2021-07-13 08:41:26', '2021-07-13 08:41:26', NULL, 2, 1, 4),
+(25, 'Auth Basics', '2021-07-13 08:44:05', '2021-07-13 08:44:05', NULL, NULL, 1, 3),
+(26, 'Starter Kits: Breeze (Tailwind) or Laravel UI (Bootstrap)', '2021-07-13 08:44:49', '2021-07-13 08:47:39', NULL, 25, 1, 1),
+(27, 'Default Auth Model and Access its Fields from Anywhere', '2021-07-13 08:46:44', '2021-07-13 08:48:19', NULL, 25, 1, 2),
+(28, 'Check Auth in Controller / Blade', '2021-07-13 08:47:05', '2021-07-13 08:53:30', NULL, 25, 1, 3),
+(29, 'Auth Advanced', '2021-07-13 08:49:28', '2021-07-13 08:49:28', NULL, NULL, 4, 0),
+(30, 'Authorization: Roles/Permissions, Gates, Policies', '2021-07-13 08:49:57', '2021-07-16 08:24:30', NULL, 29, 4, 1),
+(31, '(optional) Starter Kits: Laravel Jetstream and Fortify', '2021-07-13 08:51:02', '2021-07-13 08:51:02', NULL, NULL, 2, 0),
+(32, 'Events and Listeners', '2021-07-13 08:52:34', '2021-07-13 08:52:34', NULL, NULL, 2, 0),
+(33, 'Table Pagination', '2021-07-13 08:58:23', '2021-07-13 09:29:28', NULL, 38, 1, 4),
+(34, 'File Uploads and Storage Folder Basics', '2021-07-13 08:59:03', '2021-07-13 09:28:53', NULL, 38, 1, 3),
+(35, 'File Uploads Advanced', '2021-07-13 08:59:39', '2021-07-16 08:26:30', NULL, NULL, 4, 0),
+(36, 'Route Redirect', '2021-07-13 09:02:59', '2021-07-13 09:02:59', NULL, 9, 4, 4),
+(37, 'Blade If-Else and Loop Structures', '2021-07-13 09:17:08', '2021-07-13 09:17:08', NULL, 14, 1, 2),
+(38, 'Full Simple CRUD', '2021-07-13 09:28:06', '2021-07-13 09:28:06', NULL, NULL, 1, 5),
+(39, 'Route Parameters', '2021-07-14 08:31:14', '2021-07-14 08:31:14', NULL, 1, 1, 3),
+(40, 'Route Caching', '2021-07-14 08:41:25', '2021-07-14 09:57:58', NULL, 41, 2, 1),
+(41, 'Routing Extra Features', '2021-07-14 09:57:48', '2021-07-14 09:57:48', NULL, NULL, 2, 0),
+(42, 'Rate Limiting', '2021-07-14 09:59:09', '2021-07-14 09:59:09', NULL, 41, 2, 2),
+(43, 'Various Extra Features', '2021-07-14 10:01:12', '2021-07-14 10:01:12', NULL, NULL, 2, 0),
+(44, 'Invokable controllers', '2021-07-14 10:01:35', '2021-07-14 10:01:35', NULL, 43, 2, 1),
+(45, 'Blade Extra Features', '2021-07-14 12:11:54', '2021-07-14 12:11:54', NULL, NULL, 2, 0),
+(46, 'Custom Blade Directives', '2021-07-14 12:12:24', '2021-07-14 12:12:24', NULL, 45, 2, 2),
+(47, 'API Basics', '2021-07-14 12:16:32', '2021-07-14 12:16:32', NULL, NULL, 4, 0),
+(48, 'API Advanced', '2021-07-14 12:18:09', '2021-07-14 12:18:09', NULL, NULL, 2, 0),
+(49, 'Front-end Basics: Vue.js or Similar Alternative', '2021-07-14 12:20:05', '2021-07-14 12:20:05', NULL, NULL, 2, 0),
+(50, 'Eloquent Query Scopes', '2021-07-14 12:30:55', '2021-07-14 12:30:55', NULL, 20, 2, 2),
+(51, 'Polymorphic relationships', '2021-07-14 12:31:30', '2021-07-14 12:31:30', NULL, 20, 4, 3),
+(52, 'Eloquent Accessors and Mutators', '2021-07-14 12:32:35', '2021-07-14 12:32:35', NULL, 20, 4, 4),
+(53, 'Eloquent Collections', '2021-07-16 08:15:51', '2021-07-16 08:15:51', NULL, 20, 4, 5),
+(54, 'Log Files in Laravel', '2021-07-16 08:17:08', '2021-07-16 08:18:22', NULL, 55, 4, 1),
+(55, 'Debugging Errors', '2021-07-16 08:17:56', '2021-07-16 08:17:56', NULL, NULL, 4, 0),
+(56, 'Try-Catch and Laravel Exceptions', '2021-07-16 08:19:24', '2021-07-16 08:19:24', NULL, 55, 4, 2),
+(57, 'Customizing Error Pages and Messages', '2021-07-16 08:20:22', '2021-07-16 08:20:22', NULL, 55, 4, 4),
+(58, '(optional) Third Party Bug Trackers: Bugsnag, Flare, Sentry, Rollbar', '2021-07-16 08:21:04', '2021-07-16 08:21:04', NULL, 55, 4, 5),
+(59, 'How default Middleware works like \"Auth\"', '2021-07-16 08:22:15', '2021-07-16 08:22:15', NULL, 12, 4, 1),
+(60, 'Create Custom Middleware Class', '2021-07-16 08:22:32', '2021-07-16 08:22:32', NULL, 12, 4, 2),
+(61, 'Authorization: Extra Packages - Spatie Permission, Bouncer, etc', '2021-07-16 08:24:10', '2021-07-17 06:12:28', NULL, 29, 4, 2),
+(62, 'Authentication: Email Verification', '2021-07-16 08:24:53', '2021-07-16 08:24:53', NULL, 29, 4, 3),
+(63, 'Drivers and Disks, Example of Amazon S3', '2021-07-16 08:26:21', '2021-07-16 08:26:21', NULL, 35, 4, 1),
+(64, 'Extra Packages: Spatie Medialibrary, Intervention Image, etc', '2021-07-16 08:26:50', '2021-07-16 08:26:50', NULL, 35, 4, 2),
+(65, 'Sending Email', '2021-07-16 08:27:48', '2021-07-16 08:27:48', NULL, NULL, 4, 0),
+(66, 'Mailables and Mail Facade', '2021-07-16 08:28:05', '2021-07-16 08:28:05', NULL, 65, 4, 1),
+(67, 'Configure Drivers/Services: Mailgun, Mailtrap, etc', '2021-07-16 08:28:40', '2021-07-16 08:28:40', NULL, 65, 4, 2),
+(68, 'Notifications System: Email, SMS, Slack, etc.', '2021-07-16 08:29:07', '2021-07-16 08:29:07', NULL, 65, 4, 3),
+(69, 'API Routes and Controllers', '2021-07-16 08:30:26', '2021-07-16 08:30:26', NULL, 47, 4, 1),
+(70, 'API Eloquent Resources', '2021-07-16 08:30:46', '2021-07-16 08:30:46', NULL, 47, 4, 2),
+(71, 'Automated Testing with PHPUnit', '2021-07-16 08:32:31', '2021-07-16 08:32:31', NULL, NULL, 4, 0),
+(72, '\"Smoke\" Tests to Check if Pages are Loading', '2021-07-16 08:32:49', '2021-07-16 08:32:49', NULL, 71, 4, 1),
+(73, 'Configure Testing Database and Test CRUD Operations', '2021-07-16 08:33:30', '2021-07-16 08:33:30', NULL, 71, 4, 2),
+(74, 'Jobs and Queues', '2021-07-16 18:15:54', '2021-07-16 18:15:54', NULL, NULL, 2, 0),
+(75, 'Deployment and Version Control', '2021-07-16 18:18:52', '2021-07-17 06:45:24', NULL, NULL, 4, 0),
+(76, 'API Auth with Sanctum', '2021-07-17 06:18:59', '2021-07-17 06:18:59', NULL, 47, 4, 3),
+(77, 'Local Debugging Tools: Debugbar, Telescope, Ray', '2021-07-17 06:35:42', '2021-07-17 06:35:42', NULL, 55, 4, 3),
+(78, 'Deployment on Live Servers', '2021-07-17 06:46:04', '2021-07-17 06:46:04', NULL, 75, 4, 2),
+(79, 'Git Version Control', '2021-07-17 06:46:19', '2021-07-17 06:46:19', NULL, 75, 4, 1);
+
+
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
