@@ -23,6 +23,7 @@ Create your very first simple Laravel project
 | Displaying Variables in Blade |[Official Docs: Blade: Displaying Data](https://laravel.com/docs/8.x/blade#displaying-data) <br>|
 | Blade If-Else and Loop Structures |[Official Docs: Blade: If-Statements](https://laravel.com/docs/8.x/blade#if-statements) <br>[Official Docs: Blade Loops](https://laravel.com/docs/8.x/blade#loops) <br>|
 | Layout: @include, @extends, @section, @yield |[Official Docs: Blade: Layout Using Template Inheritance](https://laravel.com/docs/8.x/blade#layouts-using-template-inheritance) <br>|
+| Blade Components |[Official Docs: Blade Components](https://laravel.com/docs/8.x/blade#components) <br>[Video: Laravel Blade Components: Two Examples - Laravel Breeze/UI](https://www.youtube.com/watch?v=HybWBINeXMw) <br>|
 | **Auth Basics** |  |
 | Starter Kits: Breeze (Tailwind) or Laravel UI (Bootstrap) |[Official Docs: Laravel Breeze Official Documentation](https://laravel.com/docs/8.x/starter-kits#laravel-breeze) <br>[Official Docs: Laravel UI: Official Github Page](https://github.com/laravel/ui) <br>|
 | Default Auth Model and Access its Fields from Anywhere |[Official Docs: Retrieving the Authenticated User](https://laravel.com/docs/8.x/authentication#retrieving-the-authenticated-user) <br>|
@@ -37,6 +38,7 @@ Create your very first simple Laravel project
 | Forms, Validation and Form Requests |[Official Docs: Laravel Validation](https://laravel.com/docs/8.x/validation) <br>|
 | File Uploads and Storage Folder Basics |[Official Docs: Filesystem: File Uploads](https://laravel.com/docs/8.x/filesystem#file-uploads) <br>|
 | Table Pagination |[Official Docs: Database Pagination](https://laravel.com/docs/8.x/pagination) <br>|
+
 
 ## Advanced Beginner Level
 The goal of this level is to find the first job or freelance gig
@@ -85,7 +87,9 @@ The goal of this level is to find the first job or freelance gig
 | Git Version Control |[Official Docs: Git](https://git-scm.com/) <br>[Video: Git in Laravel. Part 1 - Branches: Main, Develop and Feature](https://www.youtube.com/watch?v=AmScEC-_72I) <br>|
 | Deployment on Live Servers |[Official Docs: Deployment](https://laravel.com/docs/8.x/deployment) <br>[Article: How to Deploy Laravel Projects to Live Server: The Ultimate Guide](https://laraveldaily.com/how-to-deploy-laravel-projects-to-live-server-the-ultimate-guide/) <br>[Article: What Server is Needed to Deploy Laravel Projects](https://laraveldaily.com/what-server-is-needed-to-deploy-laravel-projects/) <br>[Video: How we Deploy Laravel: Branches, Staging Servers, Forge and Envoyer](https://www.youtube.com/watch?v=8DVuVftFZcQ) <br>|
 
+
 ## (WORK IN PROGRESS) Mid Level
+
 
 | Topic | Learning Links |
 | ----- | ----- |
@@ -97,7 +101,6 @@ The goal of this level is to find the first job or freelance gig
 | **Various Extra Features** |  |
 | Invokable controllers ||
 | **Blade Extra Features** |  |
-| Blade Components ||
 | Custom Blade Directives ||
 | **API Advanced** |  |
 | **Front-end Basics: Vue.js or Similar Alternative** |  |
@@ -105,8 +108,11 @@ The goal of this level is to find the first job or freelance gig
 | Laravel Horizon (optional, if you use Redis) |[Official Docs: Laravel Horizon](https://laravel.com/docs/8.x/horizon) <br>|
 | **Payments** |  |
 
+
 ## (TO BE DONE LATER) Senior Level
 
 
 | Topic | Learning Links |
 | ----- | ----- |
+
+
