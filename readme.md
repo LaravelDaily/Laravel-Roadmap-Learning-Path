@@ -59,6 +59,7 @@ The goal of this level is to find the first job or freelance gig
 | Polymorphic relationships |[Official Docs: Polymorphic Relationships](https://laravel.com/docs/8.x/eloquent-relationships#polymorphic-relationships) <br>|
 | Eloquent Accessors and Mutators |[Official Docs: Accessors & Mutators](https://laravel.com/docs/8.x/eloquent-mutators#accessors-and-mutators) <br>|
 | Eloquent Collections |[Official Docs: Eloquent Collections](https://laravel.com/docs/8.x/eloquent-collections) <br>[Official Docs: General Laravel Collections](https://laravel.com/docs/8.x/collections) <br>|
+| Soft Deletes |[Official Docs: Soft Deleting](https://laravel.com/docs/8.x/eloquent#soft-deleting) <br>|
 | **Auth Advanced** |  |
 | Authorization: Roles/Permissions, Gates, Policies |[Official Docs: Authorization](https://laravel.com/docs/8.x/authorization) <br>[Video: Laravel Roles and Permissions: All CORE Things You Need To Know](https://www.youtube.com/watch?v=kZOgH3-0Bko) <br>|
 | Authorization: Extra Packages - Spatie Permission, Bouncer, etc |[Video: Spatie Laravel Permission: Example Project Review](https://www.youtube.com/watch?v=NgToi0uiMNQ) <br>[Article: Two Best Laravel Packages to Manage Roles/Permissions](https://laravel-news.com/two-best-roles-permissions-packages) <br>[Official Docs: spatie/laravel-permission](https://github.com/spatie/laravel-permission) <br>[Official Docs: JosephSilber/bouncer](https://github.com/JosephSilber/bouncer) <br>|
@@ -68,8 +69,10 @@ The goal of this level is to find the first job or freelance gig
 | Extra Packages: Spatie Medialibrary, Intervention Image, etc |[Official Docs: spatie/laravel-medialibrary](https://github.com/spatie/laravel-medialibrary) <br>[Official Docs: intervention/image](https://github.com/Intervention/image) <br>|
 | **API Basics** |  |
 | API Routes and Controllers |[Official Docs: API Resource Routes](https://laravel.com/docs/8.x/controllers#api-resource-routes) <br>[Official Docs: Default Route Files](https://laravel.com/docs/8.x/routing#the-default-route-files) <br>|
+| Working with API Clients: Postman or Alternatives |[Official Docs: Postman API Client](https://www.postman.com/product/api-client/) <br>|
 | API Eloquent Resources |[Official Docs: Eloquent: API Resources](https://laravel.com/docs/8.x/eloquent-resources) <br>|
 | API Auth with Sanctum |[Official Docs: Laravel Sanctum](https://laravel.com/docs/8.x/sanctum) <br>|
+| API Error Handling and Status Codes |[Video: Laravel API 404 Error: Customize Exception Message](https://www.youtube.com/watch?v=SlBJrLnyoMk) <br>[Article: HTTP Status Codes](https://httpstatuses.com/) <br>|
 | **Debugging Errors** |  |
 | Log Files in Laravel |[Official Docs: Logging](https://laravel.com/docs/8.x/logging) <br>|
 | Try-Catch and Laravel Exceptions |[Official Docs: Error Handling](https://laravel.com/docs/8.x/errors) <br>[Video: Exceptions in Laravel: Why/How to Use and Create Your Own](https://www.youtube.com/watch?v=RTTXZVIL6tw) <br>|
