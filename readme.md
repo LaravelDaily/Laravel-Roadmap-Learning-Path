@@ -19,6 +19,7 @@ Create your very first simple Laravel project
 | Callback Functions and Route::view() |[Official Docs: Basic Routing](https://laravel.com/docs/8.x/routing#basic-routing) <br>[Official Docs: View Routes](https://laravel.com/docs/8.x/routing#view-routes) <br>|
 | Routing to a Single Controller Method |[Official Docs: Basic Controllers with Routes](https://laravel.com/docs/8.x/controllers#basic-controllers) <br>|
 | Route Parameters |[Official Docs: Route Parameters](https://laravel.com/docs/8.x/routing#route-parameters) <br>|
+| Route Naming |[Official Docs: Names Routes](https://laravel.com/docs/8.x/routing#named-routes) <br>|
 | Route Groups |[Official Docs: Route Groups](https://laravel.com/docs/8.x/routing#route-groups) <br>|
 | **Blade Basics** |  |
 | Displaying Variables in Blade |[Official Docs: Blade: Displaying Data](https://laravel.com/docs/8.x/blade#displaying-data) <br>|
@@ -48,7 +49,6 @@ The goal of this level is to find the first job or freelance gig
 | Topic | Learning Links |
 | ----- | ----- |
 | **Routing Advanced** |  |
-| Route Naming |[Official Docs: Names Routes](https://laravel.com/docs/8.x/routing#named-routes) <br>|
 | Route Model Binding |[Official Docs: Route Model Binding](https://laravel.com/docs/8.x/routing#route-model-binding) <br>|
 | Route Redirect |[Official Docs: Redirect Routes](https://laravel.com/docs/8.x/routing#redirect-routes) <br>|
 | **Middleware** |  |
@@ -117,5 +117,4 @@ The goal of this level is to find the first job or freelance gig
 
 | Topic | Learning Links |
 | ----- | ----- |
-
 
