@@ -4,7 +4,7 @@
 -- https://tableplus.com/
 --
 -- Database: roadmap
--- Generation Time: 2021-07-17 11:19:54.2270
+-- Generation Time: 2021-07-22 08:00:58.6670
 -- -------------------------------------------------------------
 
 
@@ -59,7 +59,7 @@ CREATE TABLE `links` (
   PRIMARY KEY (`id`),
   KEY `type_fk_4355451` (`type_id`),
   CONSTRAINT `type_fk_4355451` FOREIGN KEY (`type_id`) REFERENCES `link_types` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=83 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=86 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 CREATE TABLE `projects` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
@@ -88,7 +88,7 @@ CREATE TABLE `topics` (
   KEY `level_fk_4355464` (`level_id`),
   CONSTRAINT `level_fk_4355464` FOREIGN KEY (`level_id`) REFERENCES `levels` (`id`),
   CONSTRAINT `topic_fk_4355444` FOREIGN KEY (`topic_id`) REFERENCES `topics` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=80 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=82 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 INSERT INTO `levels` (`id`, `name`, `position`, `created_at`, `updated_at`, `deleted_at`, `description`) VALUES
 (1, 'Beginner', 1, '2021-07-10 19:33:21', '2021-07-13 08:23:22', NULL, 'Create your very first simple Laravel project'),
@@ -178,7 +178,10 @@ INSERT INTO `link_topic` (`link_id`, `topic_id`) VALUES
 (79, 78),
 (80, 79),
 (81, 79),
-(82, 78);
+(82, 78),
+(83, 81),
+(84, 17),
+(85, 17);
 
 INSERT INTO `link_types` (`id`, `name`, `created_at`, `updated_at`, `deleted_at`) VALUES
 (1, 'Article', '2021-07-10 19:33:39', '2021-07-10 19:33:39', NULL),
@@ -268,7 +271,10 @@ INSERT INTO `links` (`id`, `title`, `url`, `created_at`, `updated_at`, `deleted_
 (79, 'What Server is Needed to Deploy Laravel Projects', 'https://laraveldaily.com/what-server-is-needed-to-deploy-laravel-projects/', '2021-07-17 06:47:22', '2021-07-17 06:47:22', NULL, 1, 0),
 (80, 'Git', 'https://git-scm.com/', '2021-07-17 06:47:58', '2021-07-17 06:47:58', NULL, 3, 0),
 (81, 'Git in Laravel. Part 1 - Branches: Main, Develop and Feature', 'https://www.youtube.com/watch?v=AmScEC-_72I', '2021-07-17 06:48:28', '2021-07-17 06:48:28', NULL, 4, 0),
-(82, 'How we Deploy Laravel: Branches, Staging Servers, Forge and Envoyer', 'https://www.youtube.com/watch?v=8DVuVftFZcQ', '2021-07-17 06:49:07', '2021-07-17 06:49:07', NULL, 4, 0);
+(82, 'How we Deploy Laravel: Branches, Staging Servers, Forge and Envoyer', 'https://www.youtube.com/watch?v=8DVuVftFZcQ', '2021-07-17 06:49:07', '2021-07-17 06:49:07', NULL, 4, 0),
+(83, 'Laravel Horizon', 'https://laravel.com/docs/8.x/horizon', '2021-07-22 03:03:23', '2021-07-22 03:03:23', NULL, 3, 0),
+(84, 'Blade Components', 'https://laravel.com/docs/8.x/blade#components', '2021-07-22 04:50:33', '2021-07-22 04:50:33', NULL, 3, 0),
+(85, 'Laravel Blade Components: Two Examples - Laravel Breeze/UI', 'https://www.youtube.com/watch?v=HybWBINeXMw', '2021-07-22 04:51:04', '2021-07-22 04:51:04', NULL, 4, 0);
 
 INSERT INTO `projects` (`id`, `name`, `description`, `created_at`, `updated_at`, `deleted_at`, `level_id`) VALUES
 (1, 'Building a Simple Blog with Authentication', 'Description of the project is coming soon.', '2021-07-13 08:55:14', '2021-07-17 07:04:59', NULL, 1),
@@ -282,13 +288,13 @@ INSERT INTO `topics` (`id`, `name`, `created_at`, `updated_at`, `deleted_at`, `t
 (8, 'Callback Functions and Route::view()', '2021-07-13 08:18:23', '2021-07-13 09:08:59', NULL, 1, 1, 1),
 (9, 'Routing Advanced', '2021-07-13 08:24:21', '2021-07-13 08:24:21', NULL, NULL, 4, 0),
 (10, 'Route Naming', '2021-07-13 08:24:40', '2021-07-13 08:24:40', NULL, 9, 4, 1),
-(11, 'Route Groups', '2021-07-13 08:25:06', '2021-07-13 08:25:06', NULL, 9, 4, 2),
+(11, 'Route Groups', '2021-07-13 08:25:06', '2021-07-22 04:55:06', NULL, 1, 1, 4),
 (12, 'Middleware', '2021-07-13 08:25:34', '2021-07-16 08:22:41', NULL, NULL, 4, 0),
-(13, 'Route Model Binding', '2021-07-13 08:28:16', '2021-07-13 08:28:16', NULL, 9, 4, 3),
+(13, 'Route Model Binding', '2021-07-13 08:28:16', '2021-07-13 08:28:16', NULL, 9, 4, 2),
 (14, 'Blade Basics', '2021-07-13 08:29:19', '2021-07-13 08:29:19', NULL, NULL, 1, 2),
 (15, 'Displaying Variables in Blade', '2021-07-13 08:30:41', '2021-07-13 09:17:32', NULL, 14, 1, 1),
 (16, 'Layout: @include, @extends, @section, @yield', '2021-07-13 08:31:25', '2021-07-13 08:31:25', NULL, 14, 1, 3),
-(17, 'Blade Components', '2021-07-13 08:32:20', '2021-07-14 12:12:07', NULL, 45, 2, 1),
+(17, 'Blade Components', '2021-07-13 08:32:20', '2021-07-22 04:48:34', NULL, 14, 1, 4),
 (18, 'Forms, Validation and Form Requests', '2021-07-13 08:33:59', '2021-07-13 09:29:15', NULL, 38, 1, 2),
 (19, 'Database Migrations', '2021-07-13 08:35:16', '2021-07-13 08:35:16', NULL, 2, 1, 1),
 (20, 'Database Advanced', '2021-07-13 08:35:39', '2021-07-14 12:32:06', NULL, NULL, 4, 0),
@@ -307,7 +313,7 @@ INSERT INTO `topics` (`id`, `name`, `created_at`, `updated_at`, `deleted_at`, `t
 (33, 'Table Pagination', '2021-07-13 08:58:23', '2021-07-13 09:29:28', NULL, 38, 1, 4),
 (34, 'File Uploads and Storage Folder Basics', '2021-07-13 08:59:03', '2021-07-13 09:28:53', NULL, 38, 1, 3),
 (35, 'File Uploads Advanced', '2021-07-13 08:59:39', '2021-07-16 08:26:30', NULL, NULL, 4, 0),
-(36, 'Route Redirect', '2021-07-13 09:02:59', '2021-07-13 09:02:59', NULL, 9, 4, 4),
+(36, 'Route Redirect', '2021-07-13 09:02:59', '2021-07-13 09:02:59', NULL, 9, 4, 3),
 (37, 'Blade If-Else and Loop Structures', '2021-07-13 09:17:08', '2021-07-13 09:17:08', NULL, 14, 1, 2),
 (38, 'Full Simple CRUD', '2021-07-13 09:28:06', '2021-07-13 09:28:06', NULL, NULL, 1, 5),
 (39, 'Route Parameters', '2021-07-14 08:31:14', '2021-07-14 08:31:14', NULL, 1, 1, 3),
@@ -317,7 +323,7 @@ INSERT INTO `topics` (`id`, `name`, `created_at`, `updated_at`, `deleted_at`, `t
 (43, 'Various Extra Features', '2021-07-14 10:01:12', '2021-07-14 10:01:12', NULL, NULL, 2, 0),
 (44, 'Invokable controllers', '2021-07-14 10:01:35', '2021-07-14 10:01:35', NULL, 43, 2, 1),
 (45, 'Blade Extra Features', '2021-07-14 12:11:54', '2021-07-14 12:11:54', NULL, NULL, 2, 0),
-(46, 'Custom Blade Directives', '2021-07-14 12:12:24', '2021-07-14 12:12:24', NULL, 45, 2, 2),
+(46, 'Custom Blade Directives', '2021-07-14 12:12:24', '2021-07-14 12:12:24', NULL, 45, 2, 1),
 (47, 'API Basics', '2021-07-14 12:16:32', '2021-07-14 12:16:32', NULL, NULL, 4, 0),
 (48, 'API Advanced', '2021-07-14 12:18:09', '2021-07-14 12:18:09', NULL, NULL, 2, 0),
 (49, 'Front-end Basics: Vue.js or Similar Alternative', '2021-07-14 12:20:05', '2021-07-14 12:20:05', NULL, NULL, 2, 0),
@@ -330,8 +336,8 @@ INSERT INTO `topics` (`id`, `name`, `created_at`, `updated_at`, `deleted_at`, `t
 (56, 'Try-Catch and Laravel Exceptions', '2021-07-16 08:19:24', '2021-07-16 08:19:24', NULL, 55, 4, 2),
 (57, 'Customizing Error Pages and Messages', '2021-07-16 08:20:22', '2021-07-16 08:20:22', NULL, 55, 4, 4),
 (58, '(optional) Third Party Bug Trackers: Bugsnag, Flare, Sentry, Rollbar', '2021-07-16 08:21:04', '2021-07-16 08:21:04', NULL, 55, 4, 5),
-(59, 'How default Middleware works like \"Auth\"', '2021-07-16 08:22:15', '2021-07-16 08:22:15', NULL, 12, 4, 1),
-(60, 'Create Custom Middleware Class', '2021-07-16 08:22:32', '2021-07-16 08:22:32', NULL, 12, 4, 2),
+(59, 'Auth Middleware', '2021-07-16 08:22:15', '2021-07-22 04:57:31', NULL, 25, 1, 4),
+(60, 'Create Custom Middleware Class', '2021-07-16 08:22:32', '2021-07-16 08:22:32', NULL, 12, 4, 1),
 (61, 'Authorization: Extra Packages - Spatie Permission, Bouncer, etc', '2021-07-16 08:24:10', '2021-07-17 06:12:28', NULL, 29, 4, 2),
 (62, 'Authentication: Email Verification', '2021-07-16 08:24:53', '2021-07-16 08:24:53', NULL, 29, 4, 3),
 (63, 'Drivers and Disks, Example of Amazon S3', '2021-07-16 08:26:21', '2021-07-16 08:26:21', NULL, 35, 4, 1),
@@ -350,7 +356,9 @@ INSERT INTO `topics` (`id`, `name`, `created_at`, `updated_at`, `deleted_at`, `t
 (76, 'API Auth with Sanctum', '2021-07-17 06:18:59', '2021-07-17 06:18:59', NULL, 47, 4, 3),
 (77, 'Local Debugging Tools: Debugbar, Telescope, Ray', '2021-07-17 06:35:42', '2021-07-17 06:35:42', NULL, 55, 4, 3),
 (78, 'Deployment on Live Servers', '2021-07-17 06:46:04', '2021-07-17 06:46:04', NULL, 75, 4, 2),
-(79, 'Git Version Control', '2021-07-17 06:46:19', '2021-07-17 06:46:19', NULL, 75, 4, 1);
+(79, 'Git Version Control', '2021-07-17 06:46:19', '2021-07-17 06:46:19', NULL, 75, 4, 1),
+(80, 'Payments', '2021-07-18 08:36:15', '2021-07-18 08:36:15', NULL, NULL, 2, 0),
+(81, 'Laravel Horizon (optional, if you use Redis)', '2021-07-22 03:02:43', '2021-07-22 03:02:43', NULL, 74, 2, 1);
 
 
 
