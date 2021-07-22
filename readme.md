@@ -37,6 +37,7 @@ Create your very first simple Laravel project
 | Forms, Validation and Form Requests |[Official Docs: Laravel Validation](https://laravel.com/docs/8.x/validation) <br>|
 | File Uploads and Storage Folder Basics |[Official Docs: Filesystem: File Uploads](https://laravel.com/docs/8.x/filesystem#file-uploads) <br>|
 | Table Pagination |[Official Docs: Database Pagination](https://laravel.com/docs/8.x/pagination) <br>|
+
 ## Advanced Beginner Level
 The goal of this level is to find the first job or freelance gig
 
@@ -83,8 +84,8 @@ The goal of this level is to find the first job or freelance gig
 | **Deployment and Version Control** |  |
 | Git Version Control |[Official Docs: Git](https://git-scm.com/) <br>[Video: Git in Laravel. Part 1 - Branches: Main, Develop and Feature](https://www.youtube.com/watch?v=AmScEC-_72I) <br>|
 | Deployment on Live Servers |[Official Docs: Deployment](https://laravel.com/docs/8.x/deployment) <br>[Article: How to Deploy Laravel Projects to Live Server: The Ultimate Guide](https://laraveldaily.com/how-to-deploy-laravel-projects-to-live-server-the-ultimate-guide/) <br>[Article: What Server is Needed to Deploy Laravel Projects](https://laraveldaily.com/what-server-is-needed-to-deploy-laravel-projects/) <br>[Video: How we Deploy Laravel: Branches, Staging Servers, Forge and Envoyer](https://www.youtube.com/watch?v=8DVuVftFZcQ) <br>|
-## (WORK IN PROGRESS) Mid Level
 
+## (WORK IN PROGRESS) Mid Level
 
 | Topic | Learning Links |
 | ----- | ----- |
@@ -101,6 +102,9 @@ The goal of this level is to find the first job or freelance gig
 | **API Advanced** |  |
 | **Front-end Basics: Vue.js or Similar Alternative** |  |
 | **Jobs and Queues** |  |
+| Laravel Horizon (optional, if you use Redis) |[Official Docs: Laravel Horizon](https://laravel.com/docs/8.x/horizon) <br>|
+| **Payments** |  |
+
 ## (TO BE DONE LATER) Senior Level
 
 
