@@ -1,15 +1,3 @@
-# Laravel Learning Path
-
-This repository contains the **ordered** list of Laravel topics to learn, step-by-step, with related links.
-
-If you want to add a topic, link, or any other suggestion, please open Issues or Pull Requests.
-
-**Notice 1**: The same table below is also available as a database, so you would be able to transform it to any other format you want - PDF, chart, etc. See file [roadmap.sql](roadmap.sql)
-
-**Notice 2**: This content was filled into an adminpanel generated with our [QuickAdminPanel](https://quickadminpanel.com) - here's a [video demo of that process on Youtube](https://www.youtube.com/watch?v=i2ElUDUDRms). By purchasing QuickAdminPanel, you support my free initiatives, like this Roadmap.
-
---- 
-
 ## Beginner Level
 Create your very first simple Laravel project
 
@@ -19,6 +7,7 @@ Create your very first simple Laravel project
 | Callback Functions and Route::view() |[Official Docs: Basic Routing](https://laravel.com/docs/8.x/routing#basic-routing) <br>[Official Docs: View Routes](https://laravel.com/docs/8.x/routing#view-routes) <br>|
 | Routing to a Single Controller Method |[Official Docs: Basic Controllers with Routes](https://laravel.com/docs/8.x/controllers#basic-controllers) <br>|
 | Route Parameters |[Official Docs: Route Parameters](https://laravel.com/docs/8.x/routing#route-parameters) <br>|
+| Route Groups |[Official Docs: Route Groups](https://laravel.com/docs/8.x/routing#route-groups) <br>|
 | **Blade Basics** |  |
 | Displaying Variables in Blade |[Official Docs: Blade: Displaying Data](https://laravel.com/docs/8.x/blade#displaying-data) <br>|
 | Blade If-Else and Loop Structures |[Official Docs: Blade: If-Statements](https://laravel.com/docs/8.x/blade#if-statements) <br>[Official Docs: Blade Loops](https://laravel.com/docs/8.x/blade#loops) <br>|
@@ -28,6 +17,7 @@ Create your very first simple Laravel project
 | Starter Kits: Breeze (Tailwind) or Laravel UI (Bootstrap) |[Official Docs: Laravel Breeze Official Documentation](https://laravel.com/docs/8.x/starter-kits#laravel-breeze) <br>[Official Docs: Laravel UI: Official Github Page](https://github.com/laravel/ui) <br>|
 | Default Auth Model and Access its Fields from Anywhere |[Official Docs: Retrieving the Authenticated User](https://laravel.com/docs/8.x/authentication#retrieving-the-authenticated-user) <br>|
 | Check Auth in Controller / Blade |[Official Docs: Determining If The Current User Is Authenticated](https://laravel.com/docs/8.x/authentication#determining-if-the-current-user-is-authenticated) <br>[Official Docs: Blade: Authentication Directives](https://laravel.com/docs/8.x/blade#authentication-directives) <br>|
+| Auth Middleware |[Official Docs: Protecting Routes](https://laravel.com/docs/8.x/authentication#protecting-routes) <br>|
 | **Database Basics** |  |
 | Database Migrations |[Official Docs: Database Migrations](https://laravel.com/docs/8.x/migrations) <br>|
 | Basic Eloquent Model and MVC: Controller -> Model -> View |[Official Docs: Eloquent: Getting Started](https://laravel.com/docs/8.x/eloquent) <br>|
@@ -47,11 +37,9 @@ The goal of this level is to find the first job or freelance gig
 | ----- | ----- |
 | **Routing Advanced** |  |
 | Route Naming |[Official Docs: Names Routes](https://laravel.com/docs/8.x/routing#named-routes) <br>|
-| Route Groups |[Official Docs: Route Groups](https://laravel.com/docs/8.x/routing#route-groups) <br>|
 | Route Model Binding |[Official Docs: Route Model Binding](https://laravel.com/docs/8.x/routing#route-model-binding) <br>|
 | Route Redirect |[Official Docs: Redirect Routes](https://laravel.com/docs/8.x/routing#redirect-routes) <br>|
 | **Middleware** |  |
-| How default Middleware works like "Auth" |[Official Docs: Protecting Routes](https://laravel.com/docs/8.x/authentication#protecting-routes) <br>|
 | Create Custom Middleware Class |[Official Docs: Defining Middleware](https://laravel.com/docs/8.x/middleware#defining-middleware) <br>|
 | **Database Advanced** |  |
 | Database Seeders and Factories |[Official Docs: Database: Seeding](https://laravel.com/docs/8.x/seeding) <br>[Official Docs: Defining Model Factories](https://laravel.com/docs/8.x/database-testing#defining-model-factories) <br>|
