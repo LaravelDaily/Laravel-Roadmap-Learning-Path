@@ -92,6 +92,7 @@ The goal of this level is to find the first job or freelance gig
 
 
 ## Mid Level
+Master all Laravel features with 3-5 years of practical experience
 
 
 | Topic | Learning Links |
