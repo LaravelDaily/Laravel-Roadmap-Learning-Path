@@ -49,7 +49,7 @@ The goal of this level is to find the first job or freelance gig
 | Topic | Learning Links |
 | ----- | ----- |
 | **Routing Advanced** |  |
-| Route Model Binding |[Official Docs: Route Model Binding](https://laravel.com/docs/8.x/routing#route-model-binding) <br>|
+| Route Model Binding |[Official Docs: Route Model Binding](https://laravel.com/docs/8.x/routing#route-model-binding) <br>[Video: Laravel Route Model Binding: All You Need To Know](https://www.youtube.com/watch?v=6dEfxGLgevM) <br>|
 | Route Redirect |[Official Docs: Redirect Routes](https://laravel.com/docs/8.x/routing#redirect-routes) <br>|
 | **Middleware** |  |
 | Create Custom Middleware Class |[Official Docs: Defining Middleware](https://laravel.com/docs/8.x/middleware#defining-middleware) <br>|
@@ -91,25 +91,55 @@ The goal of this level is to find the first job or freelance gig
 | Deployment on Live Servers |[Official Docs: Deployment](https://laravel.com/docs/8.x/deployment) <br>[Article: How to Deploy Laravel Projects to Live Server: The Ultimate Guide](https://laraveldaily.com/how-to-deploy-laravel-projects-to-live-server-the-ultimate-guide/) <br>[Article: What Server is Needed to Deploy Laravel Projects](https://laraveldaily.com/what-server-is-needed-to-deploy-laravel-projects/) <br>[Video: How we Deploy Laravel: Branches, Staging Servers, Forge and Envoyer](https://www.youtube.com/watch?v=8DVuVftFZcQ) <br>|
 
 
-## (WORK IN PROGRESS) Mid Level
+## Mid Level
 
 
 | Topic | Learning Links |
 | ----- | ----- |
-| **(optional) Starter Kits: Laravel Jetstream and Fortify** |  |
-| **Events and Listeners** |  |
 | **Routing Extra Features** |  |
-| Route Caching ||
-| Rate Limiting ||
-| **Various Extra Features** |  |
-| Invokable controllers ||
-| **Blade Extra Features** |  |
-| Custom Blade Directives ||
-| **API Advanced** |  |
-| **Front-end Basics: Vue.js or Similar Alternative** |  |
+| Route Caching |[Official Docs: Route Caching](https://laravel.com/docs/8.x/routing#route-caching) <br>|
+| Rate Limiting |[Official Docs: Rate Limiting](https://laravel.com/docs/8.x/routing#rate-limiting) <br>|
+| Invokable controllers |[Official Docs: Single Action Controllers](https://laravel.com/docs/8.x/controllers#single-action-controllers) <br>|
+| **Database/Eloquent Extra Features** |  |
+| Model Observers |[Official Docs: Eloquent Observers](https://laravel.com/docs/8.x/eloquent#observers) <br>|
+| Raw Database Queries |[Official Docs: Query Builder: Raw Expressions](https://laravel.com/docs/8.x/queries#raw-expressions) <br>|
+| All Eloquent Features |[Official Docs: All About Eloquent](https://laravel.com/docs/8.x/eloquent) <br>[Course: Eloquent: Expert Level](https://laraveldaily.teachable.com/p/laravel-eloquent-expert-level) <br>[Article: 20 Laravel Eloquent Tips and Tricks](https://laravel-news.com/eloquent-tips-tricks) <br>|
+| **Various Extra Laravel Features** |  |
+| Caching |[Official Docs: Cache](https://laravel.com/docs/8.x/cache) <br>|
+| Creating Artisan Commands |[Official Docs: Writing Artisan Commands](https://laravel.com/docs/8.x/artisan#writing-commands) <br>|
+| Task Scheduling |[Official Docs: Task Scheduling](https://laravel.com/docs/8.x/scheduling) <br>|
+| Login with X: Laravel Socialite |[Official Docs: Laravel Socialite](https://laravel.com/docs/8.x/socialite) <br>|
+| Laravel HTTP Client and Guzzle |[Official Docs: HTTP Client](https://laravel.com/docs/8.x/http-client) <br>[Video: Laravel and External APIs: Get Data with HTTP Client](https://www.youtube.com/watch?v=oEDDZsmMLc0) <br>|
+| Custom Blade Directives |[Official Docs: Extending Blade](https://laravel.com/docs/8.x/blade#extending-blade) <br>|
+| Events and Listeners |[Official Docs: Events and Listeners](https://laravel.com/docs/8.x/events) <br>|
 | **Jobs and Queues** |  |
+| Queueable Classes and Jobs |[Official Docs: Creating Jobs](https://laravel.com/docs/8.x/queues#creating-jobs) <br>[Official Docs: Queueing Notifications](https://laravel.com/docs/8.x/notifications#queueing-notifications) <br>[Official Docs: Queued Event Listeners](https://laravel.com/docs/8.x/events#queued-event-listeners) <br>[Official Docs: Queueing Mail](https://laravel.com/docs/8.x/mail#queueing-mail) <br>[Video: Laravel Queues 101: Example with Sending Emails](https://www.youtube.com/watch?v=rVx8xKisbr8) <br>|
+| Processing Failed Jobs |[Official Docs: Dealing with Failed Jobs](https://laravel.com/docs/8.x/queues#dealing-with-failed-jobs) <br>|
+| Job Dispatching, Batching and Chaining |[Official Docs: Dispatching Jobs](https://laravel.com/docs/8.x/queues#dispatching-jobs) <br>|
+| Configuring Queues: Drivers, Redis, Supervisor |[Official Docs: Running the Queue Worker](https://laravel.com/docs/8.x/queues#running-the-queue-worker) <br>[Official Docs: Configuring Supervisor](https://laravel.com/docs/8.x/queues#supervisor-configuration) <br>|
 | Laravel Horizon (optional, if you use Redis) |[Official Docs: Laravel Horizon](https://laravel.com/docs/8.x/horizon) <br>|
+| **API Advanced** |  |
+| Upload Files via API |[Article: Laravel API: How to Upload File from Vue.js](https://blog.quickadminpanel.com/laravel-api-how-to-upload-file-from-vue-js/) <br>|
+| Generate API Documentation |[Article: Laravel API Documentation with OpenAPI/Swagger](https://blog.quickadminpanel.com/laravel-api-documentation-with-openapiswagger/) <br>[Video: Scribe: New Package for Laravel API Documentation](https://www.youtube.com/watch?v=PjwGI8c2IfA) <br>|
+| API Versioning |[Article: Versioning your REST API with Laravel](https://codimth.com/blog/web/laravel/versioning-your-rest-api-laravel) <br>[Video: Versioning your API: from V1 to V2 and Beyond [video from my course]](https://laraveldaily.teachable.com/courses/how-to-create-laravel-api/lectures/17568998) <br>|
+| Only-API Projects with Front-end like Vue.js |[Course: Vue.js + Laravel: CRUD with SPA](https://laraveldaily.teachable.com/p/vue-laravel-crud-spa) <br>|
+| Only-API Projects with Mobile Apps |[Article: Using Sanctum to authenticate a mobile app](https://laravel-news.com/using-sanctum-to-authenticate-a-mobile-app) <br>|
+| **(optional) Starter Kits: Laravel Jetstream and Fortify** |  |
+| Laravel Jetstream (requires Livewire/Inertia knowledge) |[Official Docs: Laravel Jetstream](https://jetstream.laravel.com) <br>|
+| Laravel Fortify |[Official Docs: Laravel Fortify](https://laravel.com/docs/8.x/fortify) <br>|
 | **Payments** |  |
+| Laravel Cashier with Stripe/Paddle |[Official Docs: Laravel Cashier (Stripe)](https://laravel.com/docs/8.x/billing) <br>[Official Docs: Laravel Cashier (Paddle)](https://laravel.com/docs/8.x/cashier-paddle) <br>|
+| Custom Payment Providers: PayPal, Mollie, etc |[Article: Subscription billing with Laravel Cashier for Mollie](https://github.com/laravel/cashier-mollie) <br>[Article: How To Integrate Paypal Payment Gateway In Laravel](https://websolutionstuff.com/post/how-to-integrate-paypal-payment-gateway-in-laravel) <br>|
+| **Automated Testing Advanced** |  |
+| TDD: Test-Driven Development |[Course: Build A Laravel App With TDD](https://laracasts.com/series/build-a-laravel-app-with-tdd) <br>[Course: TDD With Laravel](https://tddwithlaravel.com/) <br>|
+| Mocking |[Official Docs: Mocking](https://laravel.com/docs/8.x/mocking) <br>|
+| (optional) Laravel Dusk |[Official Docs: Laravel Dusk](https://laravel.com/docs/8.x/dusk) <br>|
+| **Full-Text Search** |  |
+| Laravel Scout |[Official Docs: Laravel Scout](https://laravel.com/docs/8.x/scout) <br>|
+| Drivers: ElasticSearch, Algolia or MeiliSearch |[Article: ElasticSearch Driver for Laravel Scout](https://laravel-news.com/explorer) <br>[Official Docs: Algolia: Scout Extended](https://www.algolia.com/doc/framework-integration/laravel/getting-started/introduction-to-scout-extended/?client=php) <br>[Article: Full-Text Search with MeiliSearch and Laravel Scout](https://tighten.co/blog/full-text-search-with-meilisearch-and-scout/) <br>|
+| **Laravel Packages** |  |
+| Contributing to Packages, making Pull Requests |[Video: How to Contribute to Laravel Docs (or any open-source repository)](https://www.youtube.com/watch?v=vEcT6JIFji0) <br>|
+| Create Laravel Packages |[Official Docs: Package Development](https://laravel.com/docs/8.x/packages) <br>[Course: Laravel Package Development](https://laravelpackage.com/) <br>|
 
 
 ## (TO BE DONE LATER) Senior Level
@@ -117,4 +147,3 @@ The goal of this level is to find the first job or freelance gig
 
 | Topic | Learning Links |
 | ----- | ----- |
-
