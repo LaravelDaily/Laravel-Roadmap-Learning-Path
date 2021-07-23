@@ -13,59 +13,42 @@ If you want to add a topic, link, or any other suggestion, please open Issues or
 ## Beginner Level
 Create your very first simple Laravel project
 
-### Routing and Controllers Basics
-| Topic | Learning Links | Type | 
+| Topic | Learning Links | Type |
 | ----- | ----- | ----- |
+| **Routing and Controllers Basics** ||
 | Callback Functions and Route::view() | [Basic Routing](https://laravel.com/docs/8.x/routing#basic-routing)| Official Docs |
 | | [View Routes](https://laravel.com/docs/8.x/routing#view-routes) | Official Docs |
 | Routing to a Single Controller Method | [Basic Controllers with Routes](https://laravel.com/docs/8.x/controllers#basic-controllers)| Official Docs |
 | Route Parameters | [Route Parameters](https://laravel.com/docs/8.x/routing#route-parameters) | Official Docs |
 | Route Naming | [Names Routes](https://laravel.com/docs/8.x/routing#named-routes)| Official Docs |
 | Route Groups | [Route Groups](https://laravel.com/docs/8.x/routing#route-groups)| Official Docs |
-
-### Blade Basics
-| Topic | Learning Links | Type | 
-| ----- | ----- | ----- |
+| **Blade Basics** ||
 | Displaying Variables in Blade | [Blade: Displaying Data](https://laravel.com/docs/8.x/blade#displaying-data) | Official Docs |
 | Blade If-Else and Loop Structures |[Blade: If-Statements](https://laravel.com/docs/8.x/blade#if-statements) | Official Docs |
 | | [Blade Loops](https://laravel.com/docs/8.x/blade#loops) | Official Docs |
 | Layout: @include, @extends, @section, @yield | [Blade: Layout Using Template Inheritance](https://laravel.com/docs/8.x/blade#layouts-using-template-inheritance) | Official Docs |
 | Blade Components | [Blade Components](https://laravel.com/docs/8.x/blade#components) | Official Docs |
 | | [Laravel Blade Components: Two Examples - Laravel Breeze/UI](https://www.youtube.com/watch?v=HybWBINeXMw) | Video |
-
-
-### Auth Basics
-| Topic | Learning Links | Type | 
-| ----- | ----- | ----- |
+| **Auth Basics** ||
 | Starter Kits: Breeze (Tailwind) or Laravel UI (Bootstrap) | [Laravel Breeze Official Documentation](https://laravel.com/docs/8.x/starter-kits#laravel-breeze) | Official Docs |
 | | [Laravel UI: Official Github Page](https://github.com/laravel/ui) | Official Docs |
 | Default Auth Model and Access its Fields from Anywhere |[Retrieving the Authenticated User](https://laravel.com/docs/8.x/authentication#retrieving-the-authenticated-user)  | Official Docs |
 | Check Auth in Controller / Blade |[Determining If The Current User Is Authenticated](https://laravel.com/docs/8.x/authentication#determining-if-the-current-user-is-authenticated) | Official Docs |
 | | [Blade: Authentication Directives](https://laravel.com/docs/8.x/blade#authentication-directives) | Official Docs |
 | Auth Middleware | [Protecting Routes](https://laravel.com/docs/8.x/authentication#protecting-routes) | Official Docs |
-
-
-### Database Basics
-| Topic | Learning Links | Type | 
-| ----- | ----- | ----- |
+| **Database Basics** ||
 | Database Migrations | [Database Migrations](https://laravel.com/docs/8.x/migrations) | Official Docs |
 | Basic Eloquent Model and MVC: Controller -> Model -> View | [Eloquent: Getting Started](https://laravel.com/docs/8.x/eloquent)  | Official Docs |
 | Eloquent Relationships: belongsTo / hasMany / belongsToMany | [Eloquent Relationships: One-to-Many](https://laravel.com/docs/8.x/eloquent-relationships#one-to-many) | Official Docs |
 | | [Eloquent Relationships: BelongsTo](https://laravel.com/docs/8.x/eloquent-relationships#one-to-many-inverse) | Official Docs |
 | | [Eloquent Relationships: Many-to-Many](https://laravel.com/docs/8.x/eloquent-relationships#many-to-many) | Official Docs |
 | Eager Loading and N+1 Query Problem | [Relationships: Eager Loading](https://laravel.com/docs/8.x/eloquent-relationships#eager-loading) | Official Docs |
-
-
-### Full Simple CRUD
-| Topic | Learning Links | Type | 
-| ----- | ----- | ----- |
+| **Full Simple CRUD** ||
 | Route Resource and Resourceful Controllers | [Laravel Resource Controllers](https://laravel.com/docs/8.x/controllers#resource-controllers) | Official Docs |
 | | [Simple Laravel CRUD with Resource Controllers [digitalocean.com]](https://www.digitalocean.com/community/tutorials/simple-laravel-crud-with-resource-controllers) | Article |
 | Forms, Validation and Form Requests | [Laravel Validation](https://laravel.com/docs/8.x/validation) | Official Docs |
 | File Uploads and Storage Folder Basics | [Filesystem: File Uploads](https://laravel.com/docs/8.x/filesystem#file-uploads) | Official Docs |
 | Table Pagination | [ Database Pagination](https://laravel.com/docs/8.x/pagination) | Official Docs |
-
---- 
 
 ## Advanced Beginner Level
 The goal of this level is to find the first job or freelance gig
