@@ -98,20 +98,20 @@ Master all Laravel features with 3-5 years of practical experience
 | ----- | ----- |
 | **Routing Extra Features** ||
 | Route Caching |[Official Docs: Route Caching](https://laravel.com/docs/8.x/routing#route-caching) <br>|
-| Rate Limiting |[Official Docs: Rate Limiting](https://laravel.com/docs/8.x/routing#rate-limiting) <br>|
+| Rate Limiting |[Official Docs: Rate Limiting](https://laravel.com/docs/8.x/routing#rate-limiting) <br>[Video: Laravel: Create Public API with Cache and Rate Limits](https://www.youtube.com/watch?v=vrLcCxWlxOk) <br>|
 | Invokable controllers |[Official Docs: Single Action Controllers](https://laravel.com/docs/8.x/controllers#single-action-controllers) <br>|
 | **Database/Eloquent Extra Features** ||
-| Model Observers |[Official Docs: Eloquent Observers](https://laravel.com/docs/8.x/eloquent#observers) <br>|
+| Model Observers |[Official Docs: Eloquent Observers](https://laravel.com/docs/8.x/eloquent#observers) <br>[Video: Laravel Model: Check if Any Field Was Changed](https://www.youtube.com/watch?v=_xluet13xxE) <br>[Video: Eloquent Observers or Events Listeners? Which is Better?](https://www.youtube.com/watch?v=DvoaU6cQQHM) <br>|
 | Raw Database Queries |[Official Docs: Query Builder: Raw Expressions](https://laravel.com/docs/8.x/queries#raw-expressions) <br>|
 | All Eloquent Features |[Official Docs: All About Eloquent](https://laravel.com/docs/8.x/eloquent) <br>[Course: Eloquent: Expert Level](https://laraveldaily.teachable.com/p/laravel-eloquent-expert-level) <br>[Article: 20 Laravel Eloquent Tips and Tricks](https://laravel-news.com/eloquent-tips-tricks) <br>|
 | **Various Extra Laravel Features** ||
-| Caching |[Official Docs: Cache](https://laravel.com/docs/8.x/cache) <br>|
-| Creating Artisan Commands |[Official Docs: Writing Artisan Commands](https://laravel.com/docs/8.x/artisan#writing-commands) <br>|
+| Caching |[Official Docs: Cache](https://laravel.com/docs/8.x/cache) <br>[Video: Cache Eloquent Query Results to Load Pages Instantly](https://www.youtube.com/watch?v=JhKngeE0XJA) <br>|
+| Creating Artisan Commands |[Official Docs: Writing Artisan Commands](https://laravel.com/docs/8.x/artisan#writing-commands) <br>[Video: How to Create Artisan Commands in Laravel](https://www.youtube.com/watch?v=-r3WnYy7g48) <br>|
 | Task Scheduling |[Official Docs: Task Scheduling](https://laravel.com/docs/8.x/scheduling) <br>|
 | Login with X: Laravel Socialite |[Official Docs: Laravel Socialite](https://laravel.com/docs/8.x/socialite) <br>|
 | Laravel HTTP Client and Guzzle |[Official Docs: HTTP Client](https://laravel.com/docs/8.x/http-client) <br>[Video: Laravel and External APIs: Get Data with HTTP Client](https://www.youtube.com/watch?v=oEDDZsmMLc0) <br>|
 | Custom Blade Directives |[Official Docs: Extending Blade](https://laravel.com/docs/8.x/blade#extending-blade) <br>|
-| Events and Listeners |[Official Docs: Events and Listeners](https://laravel.com/docs/8.x/events) <br>|
+| Events and Listeners |[Official Docs: Events and Listeners](https://laravel.com/docs/8.x/events) <br>[Video: Laravel: 3 Ways to Send a Welcome Email (Controller vs Observer vs Events)](https://www.youtube.com/watch?v=ZWzH6SOzjhI) <br>[Video: Laravel: Why Observers and Event Listeners are "Risky"](https://www.youtube.com/watch?v=A3bmLo77e5M) <br>|
 | **Jobs and Queues** |[Course: Queues in Laravel](https://laraveldaily.teachable.com/p/queues-in-laravel) <br>|
 | Queueable Classes and Jobs |[Official Docs: Creating Jobs](https://laravel.com/docs/8.x/queues#creating-jobs) <br>[Official Docs: Queueing Notifications](https://laravel.com/docs/8.x/notifications#queueing-notifications) <br>[Official Docs: Queued Event Listeners](https://laravel.com/docs/8.x/events#queued-event-listeners) <br>[Official Docs: Queueing Mail](https://laravel.com/docs/8.x/mail#queueing-mail) <br>[Video: Laravel Queues 101: Example with Sending Emails](https://www.youtube.com/watch?v=rVx8xKisbr8) <br>|
 | Processing Failed Jobs |[Official Docs: Dealing with Failed Jobs](https://laravel.com/docs/8.x/queues#dealing-with-failed-jobs) <br>|
@@ -125,8 +125,8 @@ Master all Laravel features with 3-5 years of practical experience
 | Only-API Projects with Front-end like Vue.js |[Course: Vue.js + Laravel: CRUD with SPA](https://laraveldaily.teachable.com/p/vue-laravel-crud-spa) <br>|
 | Only-API Projects with Mobile Apps |[Article: Using Sanctum to authenticate a mobile app](https://laravel-news.com/using-sanctum-to-authenticate-a-mobile-app) <br>|
 | **(optional) Starter Kits: Laravel Jetstream and Fortify** ||
-| Laravel Jetstream (requires Livewire/Inertia knowledge) |[Official Docs: Laravel Jetstream](https://jetstream.laravel.com) <br>|
-| Laravel Fortify |[Official Docs: Laravel Fortify](https://laravel.com/docs/8.x/fortify) <br>|
+| Laravel Jetstream (requires Livewire/Inertia knowledge) |[Official Docs: Laravel Jetstream](https://jetstream.laravel.com) <br>[Course: Laravel Jetstream+Livewire: Real Mini-Project](https://laraveldaily.teachable.com/p/laravel-jetstream-livewire-project) <br>[Video: Laravel Jetstream: How it Works and Example How to Customize](https://www.youtube.com/watch?v=d8YgWApHMfA) <br>|
+| Laravel Fortify |[Official Docs: Laravel Fortify](https://laravel.com/docs/8.x/fortify) <br>[Video: Laravel Fortify: Four Auth Things to Customize](https://www.youtube.com/watch?v=Vr4LJU3kw1g) <br>|
 | **Payments** ||
 | Laravel Cashier with Stripe/Paddle |[Official Docs: Laravel Cashier (Stripe)](https://laravel.com/docs/8.x/billing) <br>[Official Docs: Laravel Cashier (Paddle)](https://laravel.com/docs/8.x/cashier-paddle) <br>|
 | Custom Payment Providers: PayPal, Mollie, etc |[Article: Subscription billing with Laravel Cashier for Mollie](https://github.com/laravel/cashier-mollie) <br>[Article: How To Integrate Paypal Payment Gateway In Laravel](https://websolutionstuff.com/post/how-to-integrate-paypal-payment-gateway-in-laravel) <br>|
