@@ -13,7 +13,7 @@ If you want to add a topic, link, or any other suggestion, please open Issues or
 ## Beginner Level
 Create your very first simple Laravel project
 
-| Topic | Learning Links (📖 Official Docs 🎬 Video 📄 Article) |
+| Topic | Learning Links<br>(📖 Official Docs 🎬 Video 📄 Article) |
 | ----- | ----- |
 | **Routing and Controllers: Basics** | |
 | Callback Functions and Route::view() |📖 [Basic Routing](https://laravel.com/docs/8.x/routing#basic-routing) <br>📖 [View Routes](https://laravel.com/docs/8.x/routing#view-routes) <br>|
