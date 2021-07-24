@@ -46,7 +46,7 @@ Create your very first simple Laravel project
 ## Advanced Beginner Level
 The goal of this level is to find the first job or freelance gig
 
-| Topic | Learning Links |
+| Topic | Learning Links<br>(📖 Official Docs 🎬 Video 📄 Article :capital_abcd: Course) |
 | ----- | ----- |
 | **Routing Advanced** ||
 | Route Model Binding |📖 [Route Model Binding](https://laravel.com/docs/8.x/routing#route-model-binding) <br>🎬 [Laravel Route Model Binding: All You Need To Know](https://www.youtube.com/watch?v=6dEfxGLgevM) <br>|
@@ -94,7 +94,7 @@ The goal of this level is to find the first job or freelance gig
 ## Mid Level
 Master all Laravel features with 3-5 years of practical experience
 
-| Topic | Learning Links |
+| Topic | Learning Links<br>(📖 Official Docs 🎬 Video 📄 Article :capital_abcd: Course) |
 | ----- | ----- |
 | **Routing Extra Features** ||
 | Route Caching |📖 [Route Caching](https://laravel.com/docs/8.x/routing#route-caching) <br>|
@@ -145,5 +145,5 @@ Master all Laravel features with 3-5 years of practical experience
 ## (TO BE DONE LATER) Senior Level
 
 
-| Topic | Learning Links |
+| Topic | Learning Links<br>(📖 Official Docs 🎬 Video 📄 Article :capital_abcd: Course) |
 | ----- | ----- |
