@@ -8,7 +8,7 @@ If you want to add a topic, link, or any other suggestion, please open Issues or
 
 **Notice 2**: This content was filled into an adminpanel generated with our [QuickAdminPanel](https://quickadminpanel.com) - here's a [video demo of that process on Youtube](https://www.youtube.com/watch?v=i2ElUDUDRms). By purchasing QuickAdminPanel, you support my free initiatives, like this Roadmap.
 
-**Key**:<br>📖 Offical Docs,<br>🎬 Videos<br>📰 Article
+**Key**:<br>📖 [Official Docs](https://laravel.com/docs)<br>🎬 Videos<br>📰 Article
 
 --- 
 
