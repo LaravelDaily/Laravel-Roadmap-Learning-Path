@@ -13,7 +13,7 @@ If you want to add a topic, link, or any other suggestion, please open Issues or
 ## Beginner Level
 Create your very first simple Laravel project
 
-| Topic | Learning Links<br>(📖 Official Docs 🎬 Video 📄 Article) |
+| Topic | Learning Links<br>(📖 Official Docs 🎬 Video 📄 Article :capital_abcd: Course) |
 | ----- | ----- |
 | **Routing and Controllers: Basics** | |
 | Callback Functions and Route::view() |📖 [Basic Routing](https://laravel.com/docs/8.x/routing#basic-routing) <br>📖 [View Routes](https://laravel.com/docs/8.x/routing#view-routes) <br>|
@@ -84,7 +84,7 @@ The goal of this level is to find the first job or freelance gig
 | Configure Drivers/Services: Mailgun, Mailtrap, etc |📰 [How to Send Email From Laravel, and Why We Need 3rd Party Providers For It](https://laraveldaily.com/how-to-send-email-from-laravel-and-why-we-need-3rd-party-providers-for-it/) <br>📖 [Mail: Drivers Prerequisites](https://laravel.com/docs/8.x/mail#driver-prerequisites) <br>|
 | Notifications System: Email, SMS, Slack, etc. |📖 [Notifications](https://laravel.com/docs/8.x/notifications) <br>|
 | **Automated Testing with PHPUnit** ||
-| "Smoke" Tests to Check if Pages are Loading |📖 [Testing: Getting Started](https://laravel.com/docs/8.x/testing) <br>[Course: Laravel: PHPUnit Testing for Beginners](https://laraveldaily.teachable.com/p/laravel-phpunit-testing-for-beginners) <br>|
+| "Smoke" Tests to Check if Pages are Loading |📖 [Testing: Getting Started](https://laravel.com/docs/8.x/testing) <br>[:capital_abcd: Laravel: PHPUnit Testing for Beginners](https://laraveldaily.teachable.com/p/laravel-phpunit-testing-for-beginners) <br>|
 | Configure Testing Database and Test CRUD Operations |📖 [Database Testing](https://laravel.com/docs/8.x/database-testing) <br>|
 | **Deployment and Version Control** ||
 | Git Version Control |📖 [Git](https://git-scm.com/) <br>🎬 [Git in Laravel. Part 1 - Branches: Main, Develop and Feature](https://www.youtube.com/watch?v=AmScEC-_72I) <br>|
@@ -103,7 +103,7 @@ Master all Laravel features with 3-5 years of practical experience
 | **Database/Eloquent Extra Features** ||
 | Model Observers |📖 [Eloquent Observers](https://laravel.com/docs/8.x/eloquent#observers) <br>🎬 [Laravel Model: Check if Any Field Was Changed](https://www.youtube.com/watch?v=_xluet13xxE) <br>🎬 [Eloquent Observers or Events Listeners? Which is Better?](https://www.youtube.com/watch?v=DvoaU6cQQHM) <br>|
 | Raw Database Queries |📖 [Query Builder: Raw Expressions](https://laravel.com/docs/8.x/queries#raw-expressions) <br>|
-| All Eloquent Features |📖 [All About Eloquent](https://laravel.com/docs/8.x/eloquent) <br>[Course: Eloquent: Expert Level](https://laraveldaily.teachable.com/p/laravel-eloquent-expert-level) <br>📄 [20 Laravel Eloquent Tips and Tricks](https://laravel-news.com/eloquent-tips-tricks) <br>|
+| All Eloquent Features |📖 [All About Eloquent](https://laravel.com/docs/8.x/eloquent) <br>[:capital_abcd: Eloquent: Expert Level](https://laraveldaily.teachable.com/p/laravel-eloquent-expert-level) <br>📄 [20 Laravel Eloquent Tips and Tricks](https://laravel-news.com/eloquent-tips-tricks) <br>|
 | **Various Extra Laravel Features** ||
 | Caching |📖 [Cache](https://laravel.com/docs/8.x/cache) <br>🎬 [Cache Eloquent Query Results to Load Pages Instantly](https://www.youtube.com/watch?v=JhKngeE0XJA) <br>|
 | Creating Artisan Commands |📖 [Writing Artisan Commands](https://laravel.com/docs/8.x/artisan#writing-commands) <br>🎬 [How to Create Artisan Commands in Laravel](https://www.youtube.com/watch?v=-r3WnYy7g48) <br>|
@@ -112,7 +112,7 @@ Master all Laravel features with 3-5 years of practical experience
 | Laravel HTTP Client and Guzzle |📖 [HTTP Client](https://laravel.com/docs/8.x/http-client) <br>🎬 [Laravel and External APIs: Get Data with HTTP Client](https://www.youtube.com/watch?v=oEDDZsmMLc0) <br>|
 | Custom Blade Directives |📖 [Extending Blade](https://laravel.com/docs/8.x/blade#extending-blade) <br>|
 | Events and Listeners |📖 [Events and Listeners](https://laravel.com/docs/8.x/events) <br>🎬 [Laravel: 3 Ways to Send a Welcome Email (Controller vs Observer vs Events)](https://www.youtube.com/watch?v=ZWzH6SOzjhI) <br>🎬 [Laravel: Why Observers and Event Listeners are "Risky"](https://www.youtube.com/watch?v=A3bmLo77e5M) <br>|
-| **Jobs and Queues** |[Course: Queues in Laravel](https://laraveldaily.teachable.com/p/queues-in-laravel) <br>|
+| **Jobs and Queues** |[:capital_abcd: Queues in Laravel](https://laraveldaily.teachable.com/p/queues-in-laravel) <br>|
 | Queueable Classes and Jobs |📖 [Creating Jobs](https://laravel.com/docs/8.x/queues#creating-jobs) <br>📖 [Queueing Notifications](https://laravel.com/docs/8.x/notifications#queueing-notifications) <br>📖 [Queued Event Listeners](https://laravel.com/docs/8.x/events#queued-event-listeners) <br>📖 [Queueing Mail](https://laravel.com/docs/8.x/mail#queueing-mail) <br>🎬 [Laravel Queues 101: Example with Sending Emails](https://www.youtube.com/watch?v=rVx8xKisbr8) <br>|
 | Processing Failed Jobs |📖 [Dealing with Failed Jobs](https://laravel.com/docs/8.x/queues#dealing-with-failed-jobs) <br>|
 | Job Dispatching, Batching and Chaining |📖 [Dispatching Jobs](https://laravel.com/docs/8.x/queues#dispatching-jobs) <br>|
@@ -122,16 +122,16 @@ Master all Laravel features with 3-5 years of practical experience
 | Upload Files via API |📄 [Laravel API: How to Upload File from Vue.js](https://blog.quickadminpanel.com/laravel-api-how-to-upload-file-from-vue-js/) <br>|
 | Generate API Documentation |📄 [Laravel API Documentation with OpenAPI/Swagger](https://blog.quickadminpanel.com/laravel-api-documentation-with-openapiswagger/) <br>🎬 [Scribe: New Package for Laravel API Documentation](https://www.youtube.com/watch?v=PjwGI8c2IfA) <br>|
 | API Versioning |📄 [Versioning your REST API with Laravel](https://codimth.com/blog/web/laravel/versioning-your-rest-api-laravel) <br>🎬 [Versioning your API: from V1 to V2 and Beyond [video from my course]](https://laraveldaily.teachable.com/courses/how-to-create-laravel-api/lectures/17568998) <br>|
-| Only-API Projects with Front-end like Vue.js |[Course: Vue.js + Laravel: CRUD with SPA](https://laraveldaily.teachable.com/p/vue-laravel-crud-spa) <br>|
+| Only-API Projects with Front-end like Vue.js |[:capital_abcd: Vue.js + Laravel: CRUD with SPA](https://laraveldaily.teachable.com/p/vue-laravel-crud-spa) <br>|
 | Only-API Projects with Mobile Apps |📰 [Using Sanctum to authenticate a mobile app](https://laravel-news.com/using-sanctum-to-authenticate-a-mobile-app) <br>|
 | **(optional) Starter Kits: Laravel Jetstream and Fortify** ||
-| Laravel Jetstream (requires Livewire/Inertia knowledge) |📖 [Laravel Jetstream](https://jetstream.laravel.com) <br>[Course: Laravel Jetstream+Livewire: Real Mini-Project](https://laraveldaily.teachable.com/p/laravel-jetstream-livewire-project) <br>🎬 [Laravel Jetstream: How it Works and Example How to Customize](https://www.youtube.com/watch?v=d8YgWApHMfA) <br>|
+| Laravel Jetstream (requires Livewire/Inertia knowledge) |📖 [Laravel Jetstream](https://jetstream.laravel.com) <br>[:capital_abcd: Laravel Jetstream+Livewire: Real Mini-Project](https://laraveldaily.teachable.com/p/laravel-jetstream-livewire-project) <br>🎬 [Laravel Jetstream: How it Works and Example How to Customize](https://www.youtube.com/watch?v=d8YgWApHMfA) <br>|
 | Laravel Fortify |📖 [Laravel Fortify](https://laravel.com/docs/8.x/fortify) <br>🎬 [Laravel Fortify: Four Auth Things to Customize](https://www.youtube.com/watch?v=Vr4LJU3kw1g) <br>|
 | **Payments** ||
 | Laravel Cashier with Stripe/Paddle |📖 [Laravel Cashier (Stripe)](https://laravel.com/docs/8.x/billing) <br>📖 [Laravel Cashier (Paddle)](https://laravel.com/docs/8.x/cashier-paddle) <br>|
 | Custom Payment Providers: PayPal, Mollie, etc |📄 [Subscription billing with Laravel Cashier for Mollie](https://github.com/laravel/cashier-mollie) <br>📄 [How To Integrate Paypal Payment Gateway In Laravel](https://websolutionstuff.com/post/how-to-integrate-paypal-payment-gateway-in-laravel) <br>|
 | **Automated Testing Advanced** ||
-| TDD: Test-Driven Development |[Course: Build A Laravel App With TDD](https://laracasts.com/series/build-a-laravel-app-with-tdd) <br>[Course: TDD With Laravel](https://tddwithlaravel.com/) <br>|
+| TDD: Test-Driven Development |[:capital_abcd: Build A Laravel App With TDD](https://laracasts.com/series/build-a-laravel-app-with-tdd) <br>[:capital_abcd: TDD With Laravel](https://tddwithlaravel.com/) <br>|
 | Mocking |📖 [Mocking](https://laravel.com/docs/8.x/mocking) <br>|
 | (optional) Laravel Dusk |📖 [Laravel Dusk](https://laravel.com/docs/8.x/dusk) <br>|
 | **Full-Text Search** ||
@@ -139,7 +139,7 @@ Master all Laravel features with 3-5 years of practical experience
 | Drivers: ElasticSearch, Algolia or MeiliSearch |📄 [ElasticSearch Driver for Laravel Scout](https://laravel-news.com/explorer) <br>📖 [Algolia: Scout Extended](https://www.algolia.com/doc/framework-integration/laravel/getting-started/introduction-to-scout-extended/?client=php) <br>📄 [Full-Text Search with MeiliSearch and Laravel Scout](https://tighten.co/blog/full-text-search-with-meilisearch-and-scout/) <br>|
 | **Laravel Packages** ||
 | Contributing to Packages, making Pull Requests |🎬 [How to Contribute to Laravel Docs (or any open-source repository)](https://www.youtube.com/watch?v=vEcT6JIFji0) <br>|
-| Create Laravel Packages |📖 [Package Development](https://laravel.com/docs/8.x/packages) <br>[Course: Laravel Package Development](https://laravelpackage.com/) <br>|
+| Create Laravel Packages |📖 [Package Development](https://laravel.com/docs/8.x/packages) <br>[:capital_abcd: Laravel Package Development](https://laravelpackage.com/) <br>|
 
 
 ## (TO BE DONE LATER) Senior Level
