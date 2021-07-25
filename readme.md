@@ -105,18 +105,18 @@ Master all Laravel features with 3-5 years of practical experience
 | Raw Database Queries |:book: [Query Builder: Raw Expressions](https://laravel.com/docs/8.x/queries#raw-expressions) <br>|
 | All Eloquent Features |:book: [All About Eloquent](https://laravel.com/docs/8.x/eloquent) <br>:capital_abcd: [Eloquent: Expert Level](https://laraveldaily.teachable.com/p/laravel-eloquent-expert-level) <br>:page_facing_up: [20 Laravel Eloquent Tips and Tricks](https://laravel-news.com/eloquent-tips-tricks) <br>|
 | **Various Extra Laravel Features** ||
-| Caching |:book: [Cache](https://laravel.com/docs/8.x/cache) <br>:clapper: [Cache Eloquent Query Results to Load Pages Instantly](https://www.youtube.com/watch?v=JhKngeE0XJA) <br>|
-| Creating Artisan Commands |:book: [Writing Artisan Commands](https://laravel.com/docs/8.x/artisan#writing-commands) <br>:clapper: [How to Create Artisan Commands in Laravel](https://www.youtube.com/watch?v=-r3WnYy7g48) <br>|
-| Task Scheduling |:book: [Task Scheduling](https://laravel.com/docs/8.x/scheduling) <br>|
-| Login with X: Laravel Socialite |:book: [Laravel Socialite](https://laravel.com/docs/8.x/socialite) <br>|
-| Laravel HTTP Client and Guzzle |:book: [HTTP Client](https://laravel.com/docs/8.x/http-client) <br>:clapper: [Laravel and External APIs: Get Data with HTTP Client](https://www.youtube.com/watch?v=oEDDZsmMLc0) <br>|
-| Real-time: Broadcasting, Echo and Pusher |:book: [Broadcasting](https://laravel.com/docs/8.x/broadcasting) <br>|
 | Custom Blade Directives |:book: [Extending Blade](https://laravel.com/docs/8.x/blade#extending-blade) <br>|
 | Events and Listeners |:book: [Events and Listeners](https://laravel.com/docs/8.x/events) <br>:clapper: [Laravel: 3 Ways to Send a Welcome Email (Controller vs Observer vs Events)](https://www.youtube.com/watch?v=ZWzH6SOzjhI) <br>:clapper: [Laravel: Why Observers and Event Listeners are "Risky"](https://www.youtube.com/watch?v=A3bmLo77e5M) <br>|
+| Laravel HTTP Client and Guzzle |:book: [HTTP Client](https://laravel.com/docs/8.x/http-client) <br>:clapper: [Laravel and External APIs: Get Data with HTTP Client](https://www.youtube.com/watch?v=oEDDZsmMLc0) <br>|
+| Login with X: Laravel Socialite |:book: [Laravel Socialite](https://laravel.com/docs/8.x/socialite) <br>|
+| Creating Artisan Commands |:book: [Writing Artisan Commands](https://laravel.com/docs/8.x/artisan#writing-commands) <br>:clapper: [How to Create Artisan Commands in Laravel](https://www.youtube.com/watch?v=-r3WnYy7g48) <br>|
+| Task Scheduling |:book: [Task Scheduling](https://laravel.com/docs/8.x/scheduling) <br>|
+| Caching |:book: [Cache](https://laravel.com/docs/8.x/cache) <br>:clapper: [Cache Eloquent Query Results to Load Pages Instantly](https://www.youtube.com/watch?v=JhKngeE0XJA) <br>|
+| Real-time: Broadcasting, Echo and Pusher |:book: [Broadcasting](https://laravel.com/docs/8.x/broadcasting) <br>|
 | **Jobs and Queues** |:capital_abcd: [Queues in Laravel](https://laraveldaily.teachable.com/p/queues-in-laravel) <br>|
 | Queueable Classes and Jobs |:book: [Creating Jobs](https://laravel.com/docs/8.x/queues#creating-jobs) <br>:book: [Queueing Notifications](https://laravel.com/docs/8.x/notifications#queueing-notifications) <br>:book: [Queued Event Listeners](https://laravel.com/docs/8.x/events#queued-event-listeners) <br>:book: [Queueing Mail](https://laravel.com/docs/8.x/mail#queueing-mail) <br>:clapper: [Laravel Queues 101: Example with Sending Emails](https://www.youtube.com/watch?v=rVx8xKisbr8) <br>|
-| Processing Failed Jobs |:book: [Dealing with Failed Jobs](https://laravel.com/docs/8.x/queues#dealing-with-failed-jobs) <br>|
 | Job Dispatching, Batching and Chaining |:book: [Dispatching Jobs](https://laravel.com/docs/8.x/queues#dispatching-jobs) <br>|
+| Processing Failed Jobs |:book: [Dealing with Failed Jobs](https://laravel.com/docs/8.x/queues#dealing-with-failed-jobs) <br>|
 | Configuring Queues: Drivers, Redis, Supervisor |:book: [Running the Queue Worker](https://laravel.com/docs/8.x/queues#running-the-queue-worker) <br>:book: [Configuring Supervisor](https://laravel.com/docs/8.x/queues#supervisor-configuration) <br>|
 | Laravel Horizon (optional, if you use Redis) |:book: [Laravel Horizon](https://laravel.com/docs/8.x/horizon) <br>|
 | **API Advanced** ||

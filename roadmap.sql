@@ -4,7 +4,7 @@
 -- https://tableplus.com/
 --
 -- Database: roadmap
--- Generation Time: 2021-07-23 09:23:02.9240
+-- Generation Time: 2021-07-25 07:51:33.9470
 -- -------------------------------------------------------------
 
 
@@ -59,7 +59,20 @@ CREATE TABLE `links` (
   PRIMARY KEY (`id`),
   KEY `type_fk_4355451` (`type_id`),
   CONSTRAINT `type_fk_4355451` FOREIGN KEY (`type_id`) REFERENCES `link_types` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=141 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=152 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE `projects` (
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `description` longtext COLLATE utf8mb4_unicode_ci,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `deleted_at` timestamp NULL DEFAULT NULL,
+  `level_id` bigint(20) unsigned DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `level_fk_4355474` (`level_id`),
+  CONSTRAINT `level_fk_4355474` FOREIGN KEY (`level_id`) REFERENCES `levels` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 CREATE TABLE `topics` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
@@ -75,7 +88,7 @@ CREATE TABLE `topics` (
   KEY `level_fk_4355464` (`level_id`),
   CONSTRAINT `level_fk_4355464` FOREIGN KEY (`level_id`) REFERENCES `levels` (`id`),
   CONSTRAINT `topic_fk_4355444` FOREIGN KEY (`topic_id`) REFERENCES `topics` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=117 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=118 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 INSERT INTO `levels` (`id`, `name`, `position`, `created_at`, `updated_at`, `deleted_at`, `description`) VALUES
 (1, 'Beginner', 1, '2021-07-10 19:33:21', '2021-07-13 08:23:22', NULL, 'Create your very first simple Laravel project'),
@@ -223,7 +236,18 @@ INSERT INTO `link_topic` (`link_id`, `topic_id`) VALUES
 (137, 113),
 (138, 115),
 (139, 116),
-(140, 116);
+(140, 116),
+(141, 42),
+(142, 86),
+(143, 86),
+(144, 88),
+(145, 97),
+(146, 32),
+(147, 32),
+(148, 90),
+(149, 90),
+(150, 91),
+(151, 117);
 
 INSERT INTO `link_types` (`id`, `name`, `created_at`, `updated_at`, `deleted_at`) VALUES
 (1, 'Article', '2021-07-10 19:33:39', '2021-07-10 19:33:39', NULL),
@@ -371,7 +395,22 @@ INSERT INTO `links` (`id`, `title`, `url`, `created_at`, `updated_at`, `deleted_
 (137, 'Full-Text Search with MeiliSearch and Laravel Scout', 'https://tighten.co/blog/full-text-search-with-meilisearch-and-scout/', '2021-07-23 06:07:00', '2021-07-23 06:07:00', NULL, 1, 0),
 (138, 'How to Contribute to Laravel Docs (or any open-source repository)', 'https://www.youtube.com/watch?v=vEcT6JIFji0', '2021-07-23 06:08:09', '2021-07-23 06:08:09', NULL, 4, 0),
 (139, 'Package Development', 'https://laravel.com/docs/8.x/packages', '2021-07-23 06:08:56', '2021-07-23 06:08:56', NULL, 3, 0),
-(140, 'Laravel Package Development', 'https://laravelpackage.com/', '2021-07-23 06:09:47', '2021-07-23 06:09:47', NULL, 2, 0);
+(140, 'Laravel Package Development', 'https://laravelpackage.com/', '2021-07-23 06:09:47', '2021-07-23 06:09:47', NULL, 2, 0),
+(141, 'Laravel: Create Public API with Cache and Rate Limits', 'https://www.youtube.com/watch?v=vrLcCxWlxOk', '2021-07-23 07:08:51', '2021-07-23 07:08:51', NULL, 4, 0),
+(142, 'Laravel Model: Check if Any Field Was Changed', 'https://www.youtube.com/watch?v=_xluet13xxE', '2021-07-23 07:10:58', '2021-07-23 07:10:58', NULL, 4, 0),
+(143, 'Eloquent Observers or Events Listeners? Which is Better?', 'https://www.youtube.com/watch?v=DvoaU6cQQHM', '2021-07-23 07:11:23', '2021-07-23 07:11:23', NULL, 4, 0),
+(144, 'Cache Eloquent Query Results to Load Pages Instantly', 'https://www.youtube.com/watch?v=JhKngeE0XJA', '2021-07-23 07:12:11', '2021-07-23 07:12:11', NULL, 4, 0),
+(145, 'How to Create Artisan Commands in Laravel', 'https://www.youtube.com/watch?v=-r3WnYy7g48', '2021-07-23 07:12:59', '2021-07-23 07:12:59', NULL, 4, 0),
+(146, 'Laravel: 3 Ways to Send a Welcome Email (Controller vs Observer vs Events)', 'https://www.youtube.com/watch?v=ZWzH6SOzjhI', '2021-07-23 07:14:06', '2021-07-23 07:14:06', NULL, 4, 0),
+(147, 'Laravel: Why Observers and Event Listeners are \"Risky\"', 'https://www.youtube.com/watch?v=A3bmLo77e5M', '2021-07-23 07:14:28', '2021-07-23 07:14:28', NULL, 4, 0),
+(148, 'Laravel Jetstream+Livewire: Real Mini-Project', 'https://laraveldaily.teachable.com/p/laravel-jetstream-livewire-project', '2021-07-23 07:15:39', '2021-07-23 07:15:39', NULL, 2, 0),
+(149, 'Laravel Jetstream: How it Works and Example How to Customize', 'https://www.youtube.com/watch?v=d8YgWApHMfA', '2021-07-23 07:16:14', '2021-07-23 07:16:14', NULL, 4, 0),
+(150, 'Laravel Fortify: Four Auth Things to Customize', 'https://www.youtube.com/watch?v=Vr4LJU3kw1g', '2021-07-23 07:17:52', '2021-07-23 07:17:52', NULL, 4, 0),
+(151, 'Broadcasting', 'https://laravel.com/docs/8.x/broadcasting', '2021-07-25 04:43:58', '2021-07-25 04:43:58', NULL, 3, 0);
+
+INSERT INTO `projects` (`id`, `name`, `description`, `created_at`, `updated_at`, `deleted_at`, `level_id`) VALUES
+(1, 'Building a Simple Blog with Authentication', 'Description of the project is coming soon.', '2021-07-13 08:55:14', '2021-07-17 07:04:59', NULL, 1),
+(2, 'Mini CRM', 'Description of the project is coming soon.', '2021-07-17 07:05:21', '2021-07-17 07:05:21', NULL, 4);
 
 INSERT INTO `topics` (`id`, `name`, `created_at`, `updated_at`, `deleted_at`, `topic_id`, `level_id`, `position`) VALUES
 (1, 'Routing and Controllers: Basics', '2021-07-12 12:23:27', '2021-07-13 08:19:39', NULL, NULL, 1, 1),
@@ -449,42 +488,43 @@ INSERT INTO `topics` (`id`, `name`, `created_at`, `updated_at`, `deleted_at`, `t
 (78, 'Deployment on Live Servers', '2021-07-17 06:46:04', '2021-07-17 06:46:04', NULL, 75, 4, 2),
 (79, 'Git Version Control', '2021-07-17 06:46:19', '2021-07-17 06:46:19', NULL, 75, 4, 1),
 (80, 'Payments', '2021-07-18 08:36:15', '2021-07-18 08:36:15', NULL, NULL, 2, 7),
-(81, 'Laravel Horizon (optional, if you use Redis)', '2021-07-22 03:02:43', '2021-07-22 03:02:43', NULL, 74, 2, 1),
+(81, 'Laravel Horizon (optional, if you use Redis)', '2021-07-22 03:02:43', '2021-07-22 03:02:43', NULL, 74, 2, 5),
 (82, 'Soft Deletes', '2021-07-22 05:15:24', '2021-07-22 05:15:24', NULL, 20, 4, 6),
 (83, 'Working with API Clients: Postman or Alternatives', '2021-07-22 05:37:58', '2021-07-22 05:38:12', NULL, 47, 4, 2),
 (84, 'API Error Handling and Status Codes', '2021-07-22 05:42:08', '2021-07-22 05:42:08', NULL, 47, 4, 5),
 (85, 'Database/Eloquent Extra Features', '2021-07-23 04:22:27', '2021-07-23 04:22:27', NULL, NULL, 2, 2),
-(86, 'Model Observers', '2021-07-23 04:22:49', '2021-07-23 04:22:49', NULL, 85, 2, 0),
-(87, 'Raw Database Queries', '2021-07-23 04:24:14', '2021-07-23 04:24:14', NULL, 85, 2, 0),
-(88, 'Caching', '2021-07-23 04:25:40', '2021-07-23 05:58:17', NULL, 43, 2, 0),
-(89, 'All Eloquent Features', '2021-07-23 04:29:13', '2021-07-23 04:29:13', NULL, 85, 2, 0),
-(90, 'Laravel Jetstream (requires Livewire/Inertia knowledge)', '2021-07-23 04:36:14', '2021-07-23 04:36:14', NULL, 31, 2, 0),
-(91, 'Laravel Fortify', '2021-07-23 04:37:18', '2021-07-23 04:37:18', NULL, 31, 2, 0),
-(92, 'Upload Files via API', '2021-07-23 04:39:54', '2021-07-23 04:39:54', NULL, 48, 2, 0),
-(93, 'Generate API Documentation', '2021-07-23 04:42:27', '2021-07-23 04:42:27', NULL, 48, 2, 0),
-(94, 'API Versioning', '2021-07-23 04:45:16', '2021-07-23 04:45:16', NULL, 48, 2, 0),
-(95, 'Only-API Projects with Front-end like Vue.js', '2021-07-23 04:49:01', '2021-07-23 04:49:01', NULL, 48, 2, 0),
-(96, 'Only-API Projects with Mobile Apps', '2021-07-23 04:49:15', '2021-07-23 04:49:15', NULL, 48, 2, 0),
-(97, 'Creating Artisan Commands', '2021-07-23 04:58:14', '2021-07-23 04:58:14', NULL, 43, 2, 0),
-(98, 'Task Scheduling', '2021-07-23 05:00:05', '2021-07-23 05:00:05', NULL, 43, 2, 0),
-(99, 'Login with X: Laravel Socialite', '2021-07-23 05:00:55', '2021-07-23 05:00:55', NULL, 43, 2, 0),
-(100, 'Laravel HTTP Client and Guzzle', '2021-07-23 05:01:48', '2021-07-23 05:01:48', NULL, 43, 2, 0),
-(101, 'Queueable Classes and Jobs', '2021-07-23 05:11:36', '2021-07-23 05:11:36', NULL, 74, 2, 0),
-(102, 'Processing Failed Jobs', '2021-07-23 05:14:31', '2021-07-23 05:14:31', NULL, 74, 2, 0),
-(103, 'Job Dispatching, Batching and Chaining', '2021-07-23 05:15:34', '2021-07-23 05:15:34', NULL, 74, 2, 0),
-(104, 'Configuring Queues: Drivers, Redis, Supervisor', '2021-07-23 05:16:36', '2021-07-23 05:16:36', NULL, 74, 2, 0),
-(105, 'Laravel Cashier with Stripe/Paddle', '2021-07-23 05:53:18', '2021-07-23 05:54:43', NULL, 80, 2, 0),
-(106, 'Custom Payment Providers: PayPal, Mollie, etc', '2021-07-23 05:54:59', '2021-07-23 05:54:59', NULL, 80, 2, 0),
+(86, 'Model Observers', '2021-07-23 04:22:49', '2021-07-23 04:22:49', NULL, 85, 2, 1),
+(87, 'Raw Database Queries', '2021-07-23 04:24:14', '2021-07-23 04:24:14', NULL, 85, 2, 2),
+(88, 'Caching', '2021-07-23 04:25:40', '2021-07-23 05:58:17', NULL, 43, 2, 7),
+(89, 'All Eloquent Features', '2021-07-23 04:29:13', '2021-07-23 04:29:13', NULL, 85, 2, 3),
+(90, 'Laravel Jetstream (requires Livewire/Inertia knowledge)', '2021-07-23 04:36:14', '2021-07-23 04:36:14', NULL, 31, 2, 1),
+(91, 'Laravel Fortify', '2021-07-23 04:37:18', '2021-07-23 04:37:18', NULL, 31, 2, 2),
+(92, 'Upload Files via API', '2021-07-23 04:39:54', '2021-07-23 04:39:54', NULL, 48, 2, 1),
+(93, 'Generate API Documentation', '2021-07-23 04:42:27', '2021-07-23 04:42:27', NULL, 48, 2, 2),
+(94, 'API Versioning', '2021-07-23 04:45:16', '2021-07-23 04:45:16', NULL, 48, 2, 3),
+(95, 'Only-API Projects with Front-end like Vue.js', '2021-07-23 04:49:01', '2021-07-23 04:49:01', NULL, 48, 2, 4),
+(96, 'Only-API Projects with Mobile Apps', '2021-07-23 04:49:15', '2021-07-23 04:49:15', NULL, 48, 2, 5),
+(97, 'Creating Artisan Commands', '2021-07-23 04:58:14', '2021-07-23 04:58:14', NULL, 43, 2, 5),
+(98, 'Task Scheduling', '2021-07-23 05:00:05', '2021-07-23 05:00:05', NULL, 43, 2, 6),
+(99, 'Login with X: Laravel Socialite', '2021-07-23 05:00:55', '2021-07-23 05:00:55', NULL, 43, 2, 4),
+(100, 'Laravel HTTP Client and Guzzle', '2021-07-23 05:01:48', '2021-07-23 05:01:48', NULL, 43, 2, 3),
+(101, 'Queueable Classes and Jobs', '2021-07-23 05:11:36', '2021-07-23 05:11:36', NULL, 74, 2, 1),
+(102, 'Processing Failed Jobs', '2021-07-23 05:14:31', '2021-07-23 05:14:31', NULL, 74, 2, 3),
+(103, 'Job Dispatching, Batching and Chaining', '2021-07-23 05:15:34', '2021-07-23 05:15:34', NULL, 74, 2, 2),
+(104, 'Configuring Queues: Drivers, Redis, Supervisor', '2021-07-23 05:16:36', '2021-07-23 05:16:36', NULL, 74, 2, 4),
+(105, 'Laravel Cashier with Stripe/Paddle', '2021-07-23 05:53:18', '2021-07-23 05:54:43', NULL, 80, 2, 1),
+(106, 'Custom Payment Providers: PayPal, Mollie, etc', '2021-07-23 05:54:59', '2021-07-23 05:54:59', NULL, 80, 2, 2),
 (107, 'Automated Testing Advanced', '2021-07-23 05:58:58', '2021-07-23 05:58:58', NULL, NULL, 2, 8),
-(108, 'TDD: Test-Driven Development', '2021-07-23 05:59:15', '2021-07-23 05:59:15', NULL, 107, 2, 0),
-(109, 'Mocking', '2021-07-23 06:02:03', '2021-07-23 06:02:03', NULL, 107, 2, 0),
-(110, '(optional) Laravel Dusk', '2021-07-23 06:02:54', '2021-07-23 06:02:54', NULL, 107, 2, 0),
+(108, 'TDD: Test-Driven Development', '2021-07-23 05:59:15', '2021-07-23 05:59:15', NULL, 107, 2, 1),
+(109, 'Mocking', '2021-07-23 06:02:03', '2021-07-23 06:02:03', NULL, 107, 2, 2),
+(110, '(optional) Laravel Dusk', '2021-07-23 06:02:54', '2021-07-23 06:02:54', NULL, 107, 2, 3),
 (111, 'Full-Text Search', '2021-07-23 06:03:44', '2021-07-23 06:03:44', NULL, NULL, 2, 9),
-(112, 'Laravel Scout', '2021-07-23 06:03:55', '2021-07-23 06:03:55', NULL, 111, 2, 0),
-(113, 'Drivers: ElasticSearch, Algolia or MeiliSearch', '2021-07-23 06:05:11', '2021-07-23 06:05:11', NULL, 111, 2, 0),
+(112, 'Laravel Scout', '2021-07-23 06:03:55', '2021-07-23 06:03:55', NULL, 111, 2, 1),
+(113, 'Drivers: ElasticSearch, Algolia or MeiliSearch', '2021-07-23 06:05:11', '2021-07-23 06:05:11', NULL, 111, 2, 2),
 (114, 'Laravel Packages', '2021-07-23 06:07:25', '2021-07-23 06:07:25', NULL, NULL, 2, 10),
-(115, 'Contributing to Packages, making Pull Requests', '2021-07-23 06:07:37', '2021-07-23 06:07:37', NULL, 114, 2, 0),
-(116, 'Create Laravel Packages', '2021-07-23 06:08:27', '2021-07-23 06:08:27', NULL, 114, 2, 0);
+(115, 'Contributing to Packages, making Pull Requests', '2021-07-23 06:07:37', '2021-07-23 06:07:37', NULL, 114, 2, 1),
+(116, 'Create Laravel Packages', '2021-07-23 06:08:27', '2021-07-23 06:08:27', NULL, 114, 2, 2),
+(117, 'Real-time: Broadcasting, Echo and Pusher', '2021-07-25 04:43:24', '2021-07-25 04:43:24', NULL, 43, 2, 8);
 
 
 
