@@ -13,7 +13,9 @@ If you want to add a topic, link, or any other suggestion, please open Issues or
 ## Beginner Level
 Create your very first simple Laravel project
 
-| Topic | Learning Links<br>(:book: Official Docs :clapper: Video :page_facing_up: Article :capital_abcd: Course) |
+__Link icons: :book: Official Docs :clapper: Video :page_facing_up: Article :capital_abcd: Course__ 
+
+| Topic | Learning Links |
 | ----- | ----- |
 | **Routing and Controllers: Basics** ||
 | Callback Functions and Route::view() |:book: [Basic Routing](https://laravel.com/docs/8.x/routing#basic-routing) <br>:book: [View Routes](https://laravel.com/docs/8.x/routing#view-routes) <br>|
@@ -46,7 +48,9 @@ Create your very first simple Laravel project
 ## Advanced Beginner Level
 The goal of this level is to find the first job or freelance gig
 
-| Topic | Learning Links<br>(:book: Official Docs :clapper: Video :page_facing_up: Article :capital_abcd: Course) |
+__Link icons: :book: Official Docs :clapper: Video :page_facing_up: Article :capital_abcd: Course__ 
+
+| Topic | Learning Links |
 | ----- | ----- |
 | **Routing Advanced** ||
 | Route Model Binding |:book: [Route Model Binding](https://laravel.com/docs/8.x/routing#route-model-binding) <br>:clapper: [Laravel Route Model Binding: All You Need To Know](https://www.youtube.com/watch?v=6dEfxGLgevM) <br>|
@@ -94,7 +98,9 @@ The goal of this level is to find the first job or freelance gig
 ## Mid Level
 Master all Laravel features with 3-5 years of practical experience
 
-| Topic | Learning Links<br>(:book: Official Docs :clapper: Video :page_facing_up: Article :capital_abcd: Course) |
+__Link icons: :book: Official Docs :clapper: Video :page_facing_up: Article :capital_abcd: Course__ 
+
+| Topic | Learning Links |
 | ----- | ----- |
 | **Routing Extra Features** ||
 | Route Caching |:book: [Route Caching](https://laravel.com/docs/8.x/routing#route-caching) <br>|
@@ -146,7 +152,9 @@ Master all Laravel features with 3-5 years of practical experience
 ## (TO BE DONE LATER) Senior Level
 
 
-| Topic | Learning Links<br>(:book: Official Docs :clapper: Video :page_facing_up: Article :capital_abcd: Course) |
+__Link icons: :book: Official Docs :clapper: Video :page_facing_up: Article :capital_abcd: Course__ 
+
+| Topic | Learning Links |
 | ----- | ----- |
 
 
