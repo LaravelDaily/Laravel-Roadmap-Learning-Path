@@ -149,12 +149,34 @@ __Link icons: :book: Official Docs :clapper: Video :page_facing_up: Article :cap
 | Create Laravel Packages |:book: [Package Development](https://laravel.com/docs/8.x/packages) <br>:capital_abcd: [Laravel Package Development](https://laravelpackage.com/) <br>|
 
 
-## (TO BE DONE LATER) Senior Level
-
+## Senior Level
+Responsibility for architecture decisions on large projects
 
 __Link icons: :book: Official Docs :clapper: Video :page_facing_up: Article :capital_abcd: Course__ 
 
 | Topic | Learning Links |
 | ----- | ----- |
+| **PHP/Laravel Design Patterns** ||
+| Creational Design Patterns ||
+| Structural Design Patterns ||
+| Behavioral Design Patterns ||
+| **Well-written Code** ||
+| SOLID Code ||
+| Scalable Code ||
+| Maintainable Code ||
+| Reusable Code ||
+| Best Practices and Standards ||
+| **Large Datasets** ||
+| Large Database Structures ||
+| NoSQL Solutions ||
+| SQL Query Optimization ||
+| Scaling to Multiple Databases ||
+| **Working with High-Traffic Projects** ||
+| Stability and Zero-Downtime Deployments ||
+| Performance Optimization and Caching ||
+| **Ensuring Code Quality** ||
+| Writing Testable Code ||
+| Automated Testing: Process Optimization ||
+| Continuous Integration and Continuous Delivery (CI/CD) ||
 
 
