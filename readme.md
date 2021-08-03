@@ -45,6 +45,13 @@ __Link icons: :book: Official Docs :clapper: Video :page_facing_up: Article :cap
 | Table Pagination |:book: [Database Pagination](https://laravel.com/docs/8.x/pagination) <br>|
 
 
+### Beginner Demo-Project: Personal Blog
+
+To achieve this Beginner level, you would need to practice by creating something like [this personal blog project](https://github.com/LaravelDaily/Laravel-Roadmap-Beginner-Challenge).
+
+Inside of the repository above, you will find all the details of the task, with a few example solutions.
+
+
 ## Advanced Beginner Level
 The goal of this level is to find the first job or freelance gig
 
