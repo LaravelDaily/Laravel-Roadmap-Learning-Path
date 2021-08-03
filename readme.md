@@ -51,6 +51,8 @@ To achieve this Beginner level, you would need to practice by creating something
 
 Inside of the repository above, you will find all the details of the task, with a few example solutions.
 
+-----
+
 
 ## Advanced Beginner Level
 The goal of this level is to find the first job or freelance gig
