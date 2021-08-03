@@ -161,7 +161,7 @@ __Link icons: :book: Official Docs :clapper: Video :page_facing_up: Article :cap
 | Structural Design Patterns |:page_facing_up: [Design Patterns PHP: Structural](https://designpatternsphp.readthedocs.io/en/latest/Structural/README.html) <br>|
 | Behavioral Design Patterns |:page_facing_up: [Design Patterns PHP: Behavioral](https://designpatternsphp.readthedocs.io/en/latest/Behavioral/README.html) <br>|
 | **Well-written Code** ||
-| SOLID Code ||
+| SOLID Code |:clapper: [Becoming a better developer by using the SOLID design principles by Katerina Trajchevska](https://www.youtube.com/watch?v=rtmFCcjEgEw) <br>:page_facing_up: [Writing Maintainable Code: SOLID Principles Explained in PHP (Laravel)](https://geekflare.com/php-solid-principles/) <br>:capital_abcd: [Laracasts: SOLID Principles in PHP](https://laracasts.com/series/solid-principles-in-php) <br>:clapper: [PHP Solid Principles [Playlist]](https://www.youtube.com/watch?v=ARxZV8OZ8Cg&list=PLNuh5_K9dfQ3jMU-2C2jYRGe2iXJkpCZj) <br>|
 | Scalable Code ||
 | Maintainable Code ||
 | Reusable Code ||
