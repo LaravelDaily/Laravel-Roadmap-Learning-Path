@@ -4,6 +4,7 @@ Kho lưu trữ này chứa danh sách ** có thứ tự ** các chủ đề Lara
 
 Nếu bạn muốn thêm chủ đề, liên kết hoặc bất kỳ đề xuất nào khác, vui lòng mở Vấn đề hoặc Yêu cầu kéo.
 
+Xin chao demo
 **Lưu ý 1**: The same table below is also available as a database, so you would be able to transform it to any other
 format you want - PDF, chart, etc. See file [roadmap.sql](roadmap.sql)
 
