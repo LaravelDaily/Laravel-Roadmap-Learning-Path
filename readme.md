@@ -77,10 +77,10 @@ __Link icons: :book: Official Docs :clapper: Video :page_facing_up: Article :cap
 | Authorization: Roles/Permissions, Gates, Policies |:book: [Authorization](https://laravel.com/docs/8.x/authorization) <br>:clapper: [Laravel Roles and Permissions: All CORE Things You Need To Know](https://www.youtube.com/watch?v=kZOgH3-0Bko) <br>|
 | Authorization: Extra Packages - Spatie Permission, Bouncer, etc |:clapper: [Spatie Laravel Permission: Example Project Review](https://www.youtube.com/watch?v=NgToi0uiMNQ) <br>:page_facing_up: [Two Best Laravel Packages to Manage Roles/Permissions](https://laravel-news.com/two-best-roles-permissions-packages) <br>:book: [spatie/laravel-permission](https://github.com/spatie/laravel-permission) <br>:book: [JosephSilber/bouncer](https://github.com/JosephSilber/bouncer) <br>|
 | Authentication: Email Verification |:book: [Email Verification](https://laravel.com/docs/8.x/verification) <br>|
-| **File Uploads Advanced** ||
+| **File Uploads Advanced** |:capital_abcd: [File Uploads in Laravel](https://laraveldaily.teachable.com/p/file-uploads-in-laravel) <br>|
 | Drivers and Disks, Example of Amazon S3 |:book: [File Storage](https://laravel.com/docs/8.x/filesystem) <br>:clapper: [Laravel: How to Upload Files to Amazon S3](https://www.youtube.com/watch?v=xZQM9q_QxMA) <br>|
 | Extra Packages: Spatie Medialibrary, Intervention Image, etc |:book: [spatie/laravel-medialibrary](https://github.com/spatie/laravel-medialibrary) <br>:book: [intervention/image](https://github.com/Intervention/image) <br>|
-| **API Basics** ||
+| **API Basics** |:capital_abcd: [How to Create Laravel API](https://laraveldaily.teachable.com/p/how-to-create-laravel-api) <br>|
 | API Routes and Controllers |:book: [API Resource Routes](https://laravel.com/docs/8.x/controllers#api-resource-routes) <br>:book: [Default Route Files](https://laravel.com/docs/8.x/routing#the-default-route-files) <br>|
 | Working with API Clients: Postman or Alternatives |:book: [Postman API Client](https://www.postman.com/product/api-client/) <br>|
 | API Eloquent Resources |:book: [Eloquent: API Resources](https://laravel.com/docs/8.x/eloquent-resources) <br>|
@@ -125,7 +125,7 @@ __Link icons: :book: Official Docs :clapper: Video :page_facing_up: Article :cap
 | Laravel HTTP Client and Guzzle |:book: [HTTP Client](https://laravel.com/docs/8.x/http-client) <br>:clapper: [Laravel and External APIs: Get Data with HTTP Client](https://www.youtube.com/watch?v=oEDDZsmMLc0) <br>|
 | Login with X: Laravel Socialite |:book: [Laravel Socialite](https://laravel.com/docs/8.x/socialite) <br>|
 | Creating Artisan Commands |:book: [Writing Artisan Commands](https://laravel.com/docs/8.x/artisan#writing-commands) <br>:clapper: [How to Create Artisan Commands in Laravel](https://www.youtube.com/watch?v=-r3WnYy7g48) <br>|
-| Task Scheduling |:book: [Task Scheduling](https://laravel.com/docs/8.x/scheduling) <br>|
+| Task Scheduling |:book: [Task Scheduling](https://laravel.com/docs/8.x/scheduling) <br>:clapper: [Laravel Task Scheduling: Run Artisan Command Hourly](https://www.youtube.com/watch?v=r-KrsQ0dN80) <br>|
 | Caching |:book: [Cache](https://laravel.com/docs/8.x/cache) <br>:clapper: [Cache Eloquent Query Results to Load Pages Instantly](https://www.youtube.com/watch?v=JhKngeE0XJA) <br>|
 | Real-time: Broadcasting, Echo and Pusher |:book: [Broadcasting](https://laravel.com/docs/8.x/broadcasting) <br>|
 | **Jobs and Queues** |:capital_abcd: [Queues in Laravel](https://laraveldaily.teachable.com/p/queues-in-laravel) <br>|
