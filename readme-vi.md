@@ -1,25 +1,20 @@
 # Lộ trình học tập Laravel
 
-Kho lưu trữ này chứa danh sách ** có thứ tự ** các chủ đề Laravel để tìm hiểu, từng bước, với các liên kết liên quan.
+Kho lưu trữ này chứa danh sách **ordered** của các chủ đề Laravel để tìm hiểu, từng bước, với các liên kết liên quan.
 
-Nếu bạn muốn thêm chủ đề, liên kết hoặc bất kỳ đề xuất nào khác, vui lòng mở Vấn đề hoặc Yêu cầu kéo.
+Nếu bạn muốn thêm chủ đề, liên kết hoặc bất kỳ đề xuất nào khác, vui lòng mở Vấn đề hoặc Kéo yêu cầu.
 
-Xin chao demo
-**Lưu ý 1**: The same table below is also available as a database, so you would be able to transform it to any other
-format you want - PDF, chart, etc. See file [roadmap.sql](roadmap.sql)
+**Lưu ý 1**: Bảng dưới đây cũng có sẵn dưới dạng cơ sở dữ liệu, vì vậy bạn sẽ có thể chuyển đổi nó sang bất kỳ định dạng bạn muốn - PDF, biểu đồ, v.v. Xem tệp [roadmap.sql](roadmap.sql)
 
-**Lưu ý 2**: This content was filled into an adminpanel generated with
-our [QuickAdminPanel](https://quickadminpanel.com) - here's
-a [video demo of that process on Youtube](https://www.youtube.com/watch?v=i2ElUDUDRms). By purchasing QuickAdminPanel,
-you support my free initiatives, like this Roadmap.
+**Lưu ý 2**: Nội dung này được điền vào một adminpanel được tạo bằng của chúng  tôi [QuickAdminPanel](https://quickadminpanel.com) - đây là một [video demo về quá trình đó trên Youtube](https://www.youtube.com/watch?v=i2ElUDUDRms). Bằng cách mua QuickAdminPanel, bạn ủng hộ các sáng kiến miễn phí của tôi, như Lộ trình này.
 
 --- 
 
-## Beginner Level
+## Trình độ sơ cấp
 
 Create your very first simple Laravel project
 
-__Link icons: :book: Official Docs :clapper: Video :page_facing_up: Article :capital_abcd: Course__
+__Link icons: :book: Tài liệu chính thức :clapper: Video :page_facing_up: Bài viết :capital_abcd: Khoá học__
 
 | Topic | Learning Links |
 | ----- | ----- |
@@ -52,7 +47,9 @@ __Link icons: :book: Official Docs :clapper: Video :page_facing_up: Article :cap
 
 ## Advanced Beginner Level
 
-The goal of this level is to find the first job or freelance gig
+The goal of this level is to find the first job or freelance gig 
+
+[comment]: <> (mục tiêu của cấp độ này là tìm đc công việc đầu tiên hoặc hợp đồng tự do)
 
 __Link icons: :book: Official Docs :clapper: Video :page_facing_up: Article :capital_abcd: Course__
 
