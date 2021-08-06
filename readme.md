@@ -175,10 +175,10 @@ __Link icons: :book: Official Docs :clapper: Video :page_facing_up: Article :cap
 | Maintainable Code |:page_facing_up: [How would you know if you've written readable and easily maintainable code? [forum thread]](https://softwareengineering.stackexchange.com/questions/141005/how-would-you-know-if-youve-written-readable-and-easily-maintainable-code) <br>:page_facing_up: [Crafting maintainable Laravel applications](https://jasonmccreary.me/articles/crafting-maintainable-laravel-applications/) <br>:page_facing_up: [7 Golden Rules of Clean, Simple and Maintainable Code](https://shhetri.github.io/clean-code/#/) <br>|
 | Best Practices and Standards |:page_facing_up: [Repository: alexeymezenin / laravel-best-practices](https://github.com/alexeymezenin/laravel-best-practices) <br>:capital_abcd: [PHP: The Right Way](https://phptherightway.com/) <br>:page_facing_up: [Reddit: What are your Laravel best practices?](https://www.reddit.com/r/laravel/comments/f34t86/what_are_your_laravel_best_practices/) <br>|
 | **Large Datasets** ||
-| Large Database Structures ||
-| NoSQL Solutions ||
-| SQL Query Optimization ||
-| Scaling to Multiple Databases ||
+| Large Database Structures |:capital_abcd: [How to Structure Databases in Laravel](https://laraveldaily.teachable.com/p/how-to-structure-database-in-laravel) <br>|
+| NoSQL Solutions |:book: [MongoDB and Laravel Integration](https://www.mongodb.com/compatibility/mongodb-laravel-intergration) <br>:page_facing_up: [MongoDB + Laravel = Love — When to use NoSQL](https://faun.pub/when-to-use-nosql-getting-started-with-mongodb-in-laravel-f5376ceaf545) <br>|
+| Eloquent/SQL Query Optimization |:page_facing_up: [18 Tips to optimize laravel database queries](https://dudi.dev/optimize-laravel-database-queries/) <br>:page_facing_up: [Optimizing Laravel Part 2: Improving Query Performance with Database Indexing](https://deliciousbrains.com/optimizing-laravel-database-indexing-performance/) <br>:capital_abcd: [Eloquent Performance Patterns](https://eloquent-course.reinink.ca/) <br>|
+| Scaling to Multiple Databases |:page_facing_up: [Scaling Laravel App with Multiple Databases](https://devdojo.com/bobbyiliev/scaling-laravel-app-with-multiple-databases) <br>:page_facing_up: [Multiple DB Connections in Laravel](https://fideloper.com/laravel-multiple-database-connections) <br>|
 | **Working with High-Traffic Projects** ||
 | Stability and Zero-Downtime Deployments ||
 | Performance Optimization and Caching ||
