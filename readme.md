@@ -180,11 +180,10 @@ __Link icons: :book: Official Docs :clapper: Video :page_facing_up: Article :cap
 | Eloquent/SQL Query Optimization |:page_facing_up: [18 Tips to optimize laravel database queries](https://dudi.dev/optimize-laravel-database-queries/) <br>:page_facing_up: [Optimizing Laravel Part 2: Improving Query Performance with Database Indexing](https://deliciousbrains.com/optimizing-laravel-database-indexing-performance/) <br>:capital_abcd: [Eloquent Performance Patterns](https://eloquent-course.reinink.ca/) <br>|
 | Scaling to Multiple Databases |:page_facing_up: [Scaling Laravel App with Multiple Databases](https://devdojo.com/bobbyiliev/scaling-laravel-app-with-multiple-databases) <br>:page_facing_up: [Multiple DB Connections in Laravel](https://fideloper.com/laravel-multiple-database-connections) <br>|
 | **Working with High-Traffic Projects** ||
-| Stability and Zero-Downtime Deployments ||
-| Performance Optimization and Caching ||
+| Stability and Zero-Downtime Deployments |:book: [Laravel Deployer](https://github.com/lorisleiva/laravel-deployer) <br>:book: [Envoyer - Zero Downtime PHP Deployment](https://envoyer.io/) <br>|
+| Performance Optimization and Caching |:capital_abcd: [Performant Laravel](https://serversforhackers.com/laravel-perf) <br>:page_facing_up: [The Ultimate Performance Checklist For Laravel Apps](https://laravel-news.com/performance-checklist) <br>:page_facing_up: [How to Optimize PHP Laravel Web Application for High Performance?](https://geekflare.com/laravel-optimization/) <br>|
 | **Ensuring Code Quality** ||
-| Writing Testable Code ||
-| Automated Testing: Process Optimization ||
-| Continuous Integration and Continuous Delivery (CI/CD) ||
+| Writing Testable Code |:page_facing_up: [How to write testable code](https://dev.to/ddarrko/how-to-write-more-testable-code-oi7) <br>:page_facing_up: [Refactoring towards testability](https://madewithlove.com/blog/software-engineering/refactoring-untestable-code-towards-testability/) <br>|
+| Continuous Integration and Continuous Delivery (CI/CD) |:page_facing_up: [How to create a CI/CD for a Laravel application using GitHub Actions](https://blog.logrocket.com/how-to-create-a-ci-cd-for-a-laravel-application-using-github-actions/) <br>:page_facing_up: [Configure Laravel 8 for CI/CD with Jenkins and GitHub — Part 1](https://faun.pub/configure-laravel-8-for-ci-cd-with-jenkins-and-github-part-1-58b9be304292) <br>:page_facing_up: [Build, Test, and Deploy Your Laravel Application With GitHub Actions](https://www.twilio.com/blog/build-test-deploy-laravel-application-github-actions) <br>|
 
 
