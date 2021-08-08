@@ -4,7 +4,7 @@
 -- https://tableplus.com/
 --
 -- Database: roadmap
--- Generation Time: 2021-07-25 07:51:33.9470
+-- Generation Time: 2021-08-08 10:18:16.4690
 -- -------------------------------------------------------------
 
 
@@ -59,7 +59,7 @@ CREATE TABLE `links` (
   PRIMARY KEY (`id`),
   KEY `type_fk_4355451` (`type_id`),
   CONSTRAINT `type_fk_4355451` FOREIGN KEY (`type_id`) REFERENCES `link_types` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=152 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=196 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 CREATE TABLE `projects` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
@@ -88,12 +88,12 @@ CREATE TABLE `topics` (
   KEY `level_fk_4355464` (`level_id`),
   CONSTRAINT `level_fk_4355464` FOREIGN KEY (`level_id`) REFERENCES `levels` (`id`),
   CONSTRAINT `topic_fk_4355444` FOREIGN KEY (`topic_id`) REFERENCES `topics` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=118 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=142 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 INSERT INTO `levels` (`id`, `name`, `position`, `created_at`, `updated_at`, `deleted_at`, `description`) VALUES
 (1, 'Beginner', 1, '2021-07-10 19:33:21', '2021-07-13 08:23:22', NULL, 'Create your very first simple Laravel project'),
 (2, 'Mid', 3, '2021-07-10 19:33:27', '2021-07-23 06:13:07', NULL, 'Master all Laravel features with 3-5 years of practical experience'),
-(3, '(TO BE DONE LATER) Senior', 4, '2021-07-10 19:33:33', '2021-07-17 07:04:20', NULL, ''),
+(3, 'Senior', 4, '2021-07-10 19:33:33', '2021-07-30 14:51:33', NULL, 'Responsibility for architecture decisions on large projects'),
 (4, 'Advanced Beginner', 2, '2021-07-13 08:23:32', '2021-07-13 08:23:32', NULL, 'The goal of this level is to find the first job or freelance gig');
 
 INSERT INTO `link_topic` (`link_id`, `topic_id`) VALUES
@@ -247,7 +247,51 @@ INSERT INTO `link_topic` (`link_id`, `topic_id`) VALUES
 (148, 90),
 (149, 90),
 (150, 91),
-(151, 117);
+(151, 117),
+(152, 119),
+(153, 119),
+(154, 119),
+(155, 119),
+(156, 119),
+(157, 138),
+(158, 139),
+(159, 140),
+(160, 121),
+(161, 121),
+(162, 121),
+(163, 121),
+(164, 98),
+(165, 47),
+(166, 35),
+(167, 122),
+(168, 122),
+(169, 122),
+(170, 123),
+(171, 123),
+(172, 123),
+(173, 124),
+(174, 125),
+(175, 125),
+(176, 125),
+(177, 129),
+(178, 129),
+(179, 127),
+(180, 129),
+(181, 128),
+(182, 128),
+(183, 130),
+(184, 130),
+(185, 132),
+(186, 132),
+(187, 133),
+(188, 133),
+(189, 133),
+(190, 135),
+(191, 135),
+(192, 137),
+(193, 137),
+(194, 137),
+(195, 141);
 
 INSERT INTO `link_types` (`id`, `name`, `created_at`, `updated_at`, `deleted_at`) VALUES
 (1, 'Article', '2021-07-10 19:33:39', '2021-07-10 19:33:39', NULL),
@@ -406,7 +450,51 @@ INSERT INTO `links` (`id`, `title`, `url`, `created_at`, `updated_at`, `deleted_
 (148, 'Laravel Jetstream+Livewire: Real Mini-Project', 'https://laraveldaily.teachable.com/p/laravel-jetstream-livewire-project', '2021-07-23 07:15:39', '2021-07-23 07:15:39', NULL, 2, 0),
 (149, 'Laravel Jetstream: How it Works and Example How to Customize', 'https://www.youtube.com/watch?v=d8YgWApHMfA', '2021-07-23 07:16:14', '2021-07-23 07:16:14', NULL, 4, 0),
 (150, 'Laravel Fortify: Four Auth Things to Customize', 'https://www.youtube.com/watch?v=Vr4LJU3kw1g', '2021-07-23 07:17:52', '2021-07-23 07:17:52', NULL, 4, 0),
-(151, 'Broadcasting', 'https://laravel.com/docs/8.x/broadcasting', '2021-07-25 04:43:58', '2021-07-25 04:43:58', NULL, 3, 0);
+(151, 'Broadcasting', 'https://laravel.com/docs/8.x/broadcasting', '2021-07-25 04:43:58', '2021-07-25 04:43:58', NULL, 3, 0),
+(152, 'Laravel Design Patterns - Bobby Bouwmann - Laracon EU 2018 Amsterdam', 'https://www.youtube.com/watch?v=qpo5KG0vIyE', '2021-08-02 18:30:40', '2021-08-02 18:30:40', NULL, 4, 0),
+(153, 'Laracasts: Design Patterns in PHP', 'https://laracasts.com/series/design-patterns-in-php', '2021-08-02 18:31:07', '2021-08-02 18:31:07', NULL, 2, 0),
+(154, 'Colin Decarlo - Design Patterns with Laravel [Laracon 2018]', 'https://www.youtube.com/watch?v=e4ugSgGaCQ0', '2021-08-02 18:31:59', '2021-08-02 18:31:59', NULL, 4, 0),
+(155, 'Matt Stauffer - Patterns That Pay Off [Laracon 2018]', 'https://www.youtube.com/watch?v=enTb2E4vEos', '2021-08-02 18:32:40', '2021-08-02 18:32:40', NULL, 4, 0),
+(156, 'Design Patterns in PHP', 'https://refactoring.guru/design-patterns/php', '2021-08-02 18:33:01', '2021-08-02 18:33:01', NULL, 2, 0),
+(157, 'Design Patterns PHP: Creational', 'https://designpatternsphp.readthedocs.io/en/latest/Creational/README.html', '2021-08-02 18:33:34', '2021-08-02 18:33:34', NULL, 1, 0),
+(158, 'Design Patterns PHP: Structural', 'https://designpatternsphp.readthedocs.io/en/latest/Structural/README.html', '2021-08-02 18:33:58', '2021-08-02 18:33:58', NULL, 1, 0),
+(159, 'Design Patterns PHP: Behavioral', 'https://designpatternsphp.readthedocs.io/en/latest/Behavioral/README.html', '2021-08-02 18:34:22', '2021-08-02 18:34:22', NULL, 1, 0),
+(160, 'Becoming a better developer by using the SOLID design principles by Katerina Trajchevska', 'https://www.youtube.com/watch?v=rtmFCcjEgEw', '2021-08-03 08:00:15', '2021-08-03 08:00:15', NULL, 4, 0),
+(161, 'Writing Maintainable Code: SOLID Principles Explained in PHP (Laravel)', 'https://geekflare.com/php-solid-principles/', '2021-08-03 08:01:01', '2021-08-03 08:01:01', NULL, 1, 0),
+(162, 'Laracasts: SOLID Principles in PHP', 'https://laracasts.com/series/solid-principles-in-php', '2021-08-03 08:01:25', '2021-08-03 08:01:25', NULL, 2, 0),
+(163, 'PHP Solid Principles [Playlist]', 'https://www.youtube.com/watch?v=ARxZV8OZ8Cg&list=PLNuh5_K9dfQ3jMU-2C2jYRGe2iXJkpCZj', '2021-08-03 08:01:54', '2021-08-03 08:01:54', NULL, 4, 0),
+(164, 'Laravel Task Scheduling: Run Artisan Command Hourly', 'https://www.youtube.com/watch?v=r-KrsQ0dN80', '2021-08-04 04:31:18', '2021-08-04 04:31:18', NULL, 4, 0),
+(165, 'How to Create Laravel API', 'https://laraveldaily.teachable.com/p/how-to-create-laravel-api', '2021-08-04 04:32:08', '2021-08-04 04:32:08', NULL, 2, 0),
+(166, 'File Uploads in Laravel', 'https://laraveldaily.teachable.com/p/file-uploads-in-laravel', '2021-08-04 04:33:08', '2021-08-04 04:33:08', NULL, 2, 0),
+(167, 'Scaling Laravel', 'https://courses.serversforhackers.com/scaling-laravel', '2021-08-05 08:39:02', '2021-08-05 08:39:02', NULL, 2, 0),
+(168, 'Enterprise Laravel by Matt Stauffer', 'https://enterpriselaravel.com/', '2021-08-05 08:40:06', '2021-08-05 08:40:06', NULL, 4, 0),
+(169, 'What the hell is scalable code anyway?', 'https://blog.sarasarya.com/what-the-hell-is-scalable-code-anyway-f6626ad78227', '2021-08-05 08:41:41', '2021-08-05 08:41:41', NULL, 1, 0),
+(170, 'How would you know if you\'ve written readable and easily maintainable code? [forum thread]', 'https://softwareengineering.stackexchange.com/questions/141005/how-would-you-know-if-youve-written-readable-and-easily-maintainable-code', '2021-08-05 08:45:14', '2021-08-05 08:45:14', NULL, 1, 0),
+(171, 'Crafting maintainable Laravel applications', 'https://jasonmccreary.me/articles/crafting-maintainable-laravel-applications/', '2021-08-05 08:47:29', '2021-08-05 08:47:29', NULL, 1, 0),
+(172, '7 Golden Rules of Clean, Simple and Maintainable Code', 'https://shhetri.github.io/clean-code/#/', '2021-08-05 08:48:32', '2021-08-05 08:48:32', NULL, 1, 0),
+(173, 'How to Create Reusable Code with Laravel 8 Traits', 'https://www.remotestack.io/how-to-create-reusable-code-with-laravel-traits/', '2021-08-05 08:50:23', '2021-08-05 08:51:05', '2021-08-05 08:51:05', 1, 0),
+(174, 'Repository: alexeymezenin / laravel-best-practices', 'https://github.com/alexeymezenin/laravel-best-practices', '2021-08-05 08:51:55', '2021-08-05 08:51:55', NULL, 1, 0),
+(175, 'PHP: The Right Way', 'https://phptherightway.com/', '2021-08-05 08:55:11', '2021-08-05 08:55:11', NULL, 2, 0),
+(176, 'Reddit: What are your Laravel best practices?', 'https://www.reddit.com/r/laravel/comments/f34t86/what_are_your_laravel_best_practices/', '2021-08-05 08:56:16', '2021-08-05 08:56:16', NULL, 1, 0),
+(177, '18 Tips to optimize laravel database queries', 'https://dudi.dev/optimize-laravel-database-queries/', '2021-08-06 05:21:00', '2021-08-06 05:21:00', NULL, 1, 0),
+(178, 'Optimizing Laravel Part 2: Improving Query Performance with Database Indexing', 'https://deliciousbrains.com/optimizing-laravel-database-indexing-performance/', '2021-08-06 05:22:58', '2021-08-06 05:22:58', NULL, 1, 0),
+(179, 'How to Structure Databases in Laravel', 'https://laraveldaily.teachable.com/p/how-to-structure-database-in-laravel', '2021-08-06 05:24:52', '2021-08-06 05:24:52', NULL, 2, 0),
+(180, 'Eloquent Performance Patterns', 'https://eloquent-course.reinink.ca/', '2021-08-06 05:25:31', '2021-08-06 05:25:31', NULL, 2, 0),
+(181, 'MongoDB and Laravel Integration', 'https://www.mongodb.com/compatibility/mongodb-laravel-intergration', '2021-08-06 05:30:11', '2021-08-06 05:30:11', NULL, 3, 0),
+(182, 'MongoDB + Laravel = Love — When to use NoSQL', 'https://faun.pub/when-to-use-nosql-getting-started-with-mongodb-in-laravel-f5376ceaf545', '2021-08-06 05:31:34', '2021-08-06 05:31:34', NULL, 1, 0),
+(183, 'Scaling Laravel App with Multiple Databases', 'https://devdojo.com/bobbyiliev/scaling-laravel-app-with-multiple-databases', '2021-08-06 05:34:36', '2021-08-06 05:34:36', NULL, 1, 0),
+(184, 'Multiple DB Connections in Laravel', 'https://fideloper.com/laravel-multiple-database-connections', '2021-08-06 05:35:42', '2021-08-06 05:35:42', NULL, 1, 0),
+(185, 'Laravel Deployer', 'https://github.com/lorisleiva/laravel-deployer', '2021-08-06 05:44:25', '2021-08-06 05:44:25', NULL, 3, 0),
+(186, 'Envoyer - Zero Downtime PHP Deployment', 'https://envoyer.io/', '2021-08-06 05:44:56', '2021-08-06 05:44:56', NULL, 3, 0),
+(187, 'Performant Laravel', 'https://serversforhackers.com/laravel-perf', '2021-08-06 05:47:15', '2021-08-06 05:47:15', NULL, 2, 0),
+(188, 'The Ultimate Performance Checklist For Laravel Apps', 'https://laravel-news.com/performance-checklist', '2021-08-06 05:48:35', '2021-08-06 05:48:35', NULL, 1, 0),
+(189, 'How to Optimize PHP Laravel Web Application for High Performance?', 'https://geekflare.com/laravel-optimization/', '2021-08-06 05:51:34', '2021-08-06 05:51:34', NULL, 1, 0),
+(190, 'How to write testable code', 'https://dev.to/ddarrko/how-to-write-more-testable-code-oi7', '2021-08-06 05:54:08', '2021-08-06 05:54:08', NULL, 1, 0),
+(191, 'Refactoring towards testability', 'https://madewithlove.com/blog/software-engineering/refactoring-untestable-code-towards-testability/', '2021-08-06 05:54:35', '2021-08-06 05:54:35', NULL, 1, 0),
+(192, 'How to create a CI/CD for a Laravel application using GitHub Actions', 'https://blog.logrocket.com/how-to-create-a-ci-cd-for-a-laravel-application-using-github-actions/', '2021-08-06 05:57:59', '2021-08-06 05:57:59', NULL, 1, 0),
+(193, 'Configure Laravel 8 for CI/CD with Jenkins and GitHub — Part 1', 'https://faun.pub/configure-laravel-8-for-ci-cd-with-jenkins-and-github-part-1-58b9be304292', '2021-08-06 05:59:06', '2021-08-06 05:59:06', NULL, 1, 0),
+(194, 'Build, Test, and Deploy Your Laravel Application With GitHub Actions', 'https://www.twilio.com/blog/build-test-deploy-laravel-application-github-actions', '2021-08-06 05:59:47', '2021-08-06 05:59:47', NULL, 1, 0),
+(195, 'Laravel Passport', 'https://laravel.com/docs/8.x/passport', '2021-08-08 07:14:45', '2021-08-08 07:14:45', NULL, 3, 0);
 
 INSERT INTO `projects` (`id`, `name`, `description`, `created_at`, `updated_at`, `deleted_at`, `level_id`) VALUES
 (1, 'Building a Simple Blog with Authentication', 'Description of the project is coming soon.', '2021-07-13 08:55:14', '2021-07-17 07:04:59', NULL, 1),
@@ -502,8 +590,8 @@ INSERT INTO `topics` (`id`, `name`, `created_at`, `updated_at`, `deleted_at`, `t
 (92, 'Upload Files via API', '2021-07-23 04:39:54', '2021-07-23 04:39:54', NULL, 48, 2, 1),
 (93, 'Generate API Documentation', '2021-07-23 04:42:27', '2021-07-23 04:42:27', NULL, 48, 2, 2),
 (94, 'API Versioning', '2021-07-23 04:45:16', '2021-07-23 04:45:16', NULL, 48, 2, 3),
-(95, 'Only-API Projects with Front-end like Vue.js', '2021-07-23 04:49:01', '2021-07-23 04:49:01', NULL, 48, 2, 4),
-(96, 'Only-API Projects with Mobile Apps', '2021-07-23 04:49:15', '2021-07-23 04:49:15', NULL, 48, 2, 5),
+(95, 'Only-API Projects with Front-end like Vue.js', '2021-07-23 04:49:01', '2021-07-23 04:49:01', NULL, 48, 2, 5),
+(96, 'Only-API Projects with Mobile Apps', '2021-07-23 04:49:15', '2021-07-23 04:49:15', NULL, 48, 2, 6),
 (97, 'Creating Artisan Commands', '2021-07-23 04:58:14', '2021-07-23 04:58:14', NULL, 43, 2, 5),
 (98, 'Task Scheduling', '2021-07-23 05:00:05', '2021-07-23 05:00:05', NULL, 43, 2, 6),
 (99, 'Login with X: Laravel Socialite', '2021-07-23 05:00:55', '2021-07-23 05:00:55', NULL, 43, 2, 4),
@@ -524,7 +612,31 @@ INSERT INTO `topics` (`id`, `name`, `created_at`, `updated_at`, `deleted_at`, `t
 (114, 'Laravel Packages', '2021-07-23 06:07:25', '2021-07-23 06:07:25', NULL, NULL, 2, 10),
 (115, 'Contributing to Packages, making Pull Requests', '2021-07-23 06:07:37', '2021-07-23 06:07:37', NULL, 114, 2, 1),
 (116, 'Create Laravel Packages', '2021-07-23 06:08:27', '2021-07-23 06:08:27', NULL, 114, 2, 2),
-(117, 'Real-time: Broadcasting, Echo and Pusher', '2021-07-25 04:43:24', '2021-07-25 04:43:24', NULL, 43, 2, 8);
+(117, 'Real-time: Broadcasting, Echo and Pusher', '2021-07-25 04:43:24', '2021-07-25 04:43:24', NULL, 43, 2, 8),
+(118, 'Project Architecture and Structure Decisions', '2021-07-30 14:51:09', '2021-07-30 15:13:20', '2021-07-30 15:13:20', NULL, 3, 0),
+(119, 'PHP/Laravel Design Patterns', '2021-07-30 14:51:22', '2021-07-30 15:14:07', NULL, NULL, 3, 0),
+(120, 'Well-written Code', '2021-07-30 14:51:50', '2021-07-30 14:51:50', NULL, NULL, 3, 0),
+(121, 'SOLID Code', '2021-07-30 14:52:05', '2021-07-30 14:52:05', NULL, 120, 3, 1),
+(122, 'Scalable Code', '2021-07-30 14:52:15', '2021-07-30 14:52:42', NULL, 120, 3, 2),
+(123, 'Maintainable Code', '2021-07-30 14:52:26', '2021-07-30 14:52:26', NULL, 120, 3, 3),
+(124, 'Reusable Code', '2021-07-30 14:52:35', '2021-08-05 08:51:16', '2021-08-05 08:51:16', 120, 3, 4),
+(125, 'Best Practices and Standards', '2021-07-30 14:52:53', '2021-07-30 14:52:53', NULL, 120, 3, 5),
+(126, 'Large Datasets', '2021-07-30 14:54:46', '2021-07-30 14:54:46', NULL, NULL, 3, 0),
+(127, 'Large Database Structures', '2021-07-30 14:55:11', '2021-07-30 14:55:11', NULL, 126, 3, 1),
+(128, 'NoSQL Solutions', '2021-07-30 14:55:33', '2021-07-30 14:55:33', NULL, 126, 3, 2),
+(129, 'Eloquent/SQL Query Optimization', '2021-07-30 14:55:59', '2021-08-06 05:25:45', NULL, 126, 3, 3),
+(130, 'Scaling to Multiple Databases', '2021-07-30 14:56:31', '2021-07-30 14:56:31', NULL, 126, 3, 4),
+(131, 'Working with High-Traffic Projects', '2021-07-30 14:57:40', '2021-07-30 14:58:09', NULL, NULL, 3, 0),
+(132, 'Stability and Zero-Downtime Deployments', '2021-07-30 14:58:37', '2021-07-30 14:58:47', NULL, 131, 3, 1),
+(133, 'Performance Optimization and Caching', '2021-07-30 14:59:06', '2021-07-30 14:59:06', NULL, 131, 3, 2),
+(134, 'Ensuring Code Quality', '2021-07-30 14:59:23', '2021-07-30 14:59:52', NULL, NULL, 3, 0),
+(135, 'Writing Testable Code', '2021-07-30 15:00:06', '2021-07-30 15:00:06', NULL, 134, 3, 1),
+(136, 'Automated Testing: Process Optimization', '2021-07-30 15:00:25', '2021-08-06 05:56:40', '2021-08-06 05:56:40', 134, 3, 2),
+(137, 'Continuous Integration and Continuous Delivery (CI/CD)', '2021-07-30 15:01:48', '2021-07-30 15:01:48', NULL, 134, 3, 3),
+(138, 'Creational Design Patterns', '2021-07-30 15:17:40', '2021-07-30 15:17:40', NULL, 119, 3, 1),
+(139, 'Structural Design Patterns', '2021-07-30 15:18:01', '2021-07-30 15:18:01', NULL, 119, 3, 2),
+(140, 'Behavioral Design Patterns', '2021-07-30 15:18:15', '2021-07-30 15:18:15', NULL, 119, 3, 3),
+(141, 'API with OAuth and Laravel Passport', '2021-08-08 07:14:27', '2021-08-08 07:14:27', NULL, 48, 2, 4);
 
 
 
