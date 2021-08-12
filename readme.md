@@ -104,6 +104,14 @@ __Link icons: :book: Official Docs :clapper: Video :page_facing_up: Article :cap
 | Deployment on Live Servers |:book: [Deployment](https://laravel.com/docs/8.x/deployment) <br>:page_facing_up: [How to Deploy Laravel Projects to Live Server: The Ultimate Guide](https://laraveldaily.com/how-to-deploy-laravel-projects-to-live-server-the-ultimate-guide/) <br>:page_facing_up: [What Server is Needed to Deploy Laravel Projects](https://laraveldaily.com/what-server-is-needed-to-deploy-laravel-projects/) <br>:clapper: [How we Deploy Laravel: Branches, Staging Servers, Forge and Envoyer](https://www.youtube.com/watch?v=8DVuVftFZcQ) <br>|
 
 
+### Advanced Beginner Demo-Project: Simple CRM
+
+To achieve this Advanced Beginner level, you would need to practice by creating something like [this simple CRM project](https://github.com/LaravelDaily/Laravel-Roadmap-Advanced-Beginner-Challenge).
+
+Inside of the repository above, you will find all the details of the task, with an example solution.
+
+-----
+
 ## Mid Level
 Master all Laravel features with 3-5 years of practical experience
 
