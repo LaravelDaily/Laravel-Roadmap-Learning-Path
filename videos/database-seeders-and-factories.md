@@ -1,5 +1,6 @@
 ### Database Seeders and Factories
 
+- [Seeding 50k DB Rows in Laravel: Create, Insert or Chunk?](https://www.youtube.com/watch?v=sAjLREMr-9k) / 2020 April / 3:52min
 - [Laravel Factories: Generate and Re-use Fake Records](https://www.youtube.com/watch?v=MHBDUJ51Pqs) / 2020 May / 7:59min
 - [Laravel: How to Seed New Data When Project is Live?](https://www.youtube.com/watch?v=2wZo54IjtKU) / 2020 August / 3:37min
 - [Live-coding: Seeds and Factories in Laravel 8 (free lesson from my course)](https://www.youtube.com/watch?v=qeT0pJJ_GOs) / 2021 January / 12:22min
