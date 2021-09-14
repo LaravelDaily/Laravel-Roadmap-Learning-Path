@@ -17,31 +17,31 @@ __Link icons: :book: Official Docs :clapper: Video :page_facing_up: Article :cap
 
 | Topic | Learning Links |
 | ----- | ----- |
-| **Routing and Controllers: Basics** ||
+| **Routing and Controllers: Basics** | :clapper: [Laravel 8 Routing: Important Change You Need to Know](https://www.youtube.com/watch?v=MfE1tnMG6fE) |
 | Callback Functions and Route::view() |:book: [Basic Routing](https://laravel.com/docs/8.x/routing#basic-routing) <br>:book: [View Routes](https://laravel.com/docs/8.x/routing#view-routes) <br>|
 | Routing to a Single Controller Method |:book: [Basic Controllers with Routes](https://laravel.com/docs/8.x/controllers#basic-controllers) <br>|
 | Route Parameters |:book: [Route Parameters](https://laravel.com/docs/8.x/routing#route-parameters) <br>|
-| Route Naming |:book: [Names Routes](https://laravel.com/docs/8.x/routing#named-routes) <br>|
-| Route Groups |:book: [Route Groups](https://laravel.com/docs/8.x/routing#route-groups) <br>|
-| **Blade Basics** ||
+| Route Naming |:book: [Names Routes](https://laravel.com/docs/8.x/routing#named-routes) <br> :clapper: [Laravel: Why You Need Route Names?](https://www.youtube.com/watch?v=7lalb6HtR1c) <br>|
+| Route Groups |:book: [Route Groups](https://laravel.com/docs/8.x/routing#route-groups) <br> :clapper: [Laravel Route Grouping: Simple to Very Complex](https://www.youtube.com/watch?v=I6kyfSmPhn8) <br> :clapper: [More videos](videos/route-groups.md) |
+| **Blade Basics** | :clapper: [9 Quick Tips about Laravel Blade](https://www.youtube.com/watch?v=-Glz1InN68o) <br>|
 | Displaying Variables in Blade |:book: [Blade: Displaying Data](https://laravel.com/docs/8.x/blade#displaying-data) <br>|
 | Blade If-Else and Loop Structures |:book: [Blade: If-Statements](https://laravel.com/docs/8.x/blade#if-statements) <br>:book: [Blade Loops](https://laravel.com/docs/8.x/blade#loops) <br>|
 | Layout: @include, @extends, @section, @yield |:book: [Blade: Layout Using Template Inheritance](https://laravel.com/docs/8.x/blade#layouts-using-template-inheritance) <br>|
 | Blade Components |:book: [Blade Components](https://laravel.com/docs/8.x/blade#components) <br>:clapper: [Laravel Blade Components: Two Examples - Laravel Breeze/UI](https://www.youtube.com/watch?v=HybWBINeXMw) <br>|
-| **Auth Basics** ||
-| Starter Kits: Breeze (Tailwind) or Laravel UI (Bootstrap) |:book: [Laravel Breeze Official Documentation](https://laravel.com/docs/8.x/starter-kits#laravel-breeze) <br>:book: [Laravel UI: Official Github Page](https://github.com/laravel/ui) <br>|
+| **Auth Basics** | [8 Tips & Tricks about Laravel Auth](https://www.youtube.com/watch?v=-dpp4CJS6Vk) <br> |
+| Starter Kits: Breeze (Tailwind) or Laravel UI (Bootstrap) |:book: [Laravel Breeze Official Documentation](https://laravel.com/docs/8.x/starter-kits#laravel-breeze) <br>:book: [Laravel UI: Official Github Page](https://github.com/laravel/ui) <br> :clapper: [Laravel 8 Auth: 5 "Latest" Things You Need to Know](https://www.youtube.com/watch?v=L1FVdHdEm_8) <br> [More videos](videos/auth-starter-kits.md)<br>|
 | Default Auth Model and Access its Fields from Anywhere |:book: [Retrieving the Authenticated User](https://laravel.com/docs/8.x/authentication#retrieving-the-authenticated-user) <br>|
 | Check Auth in Controller / Blade |:book: [Determining If The Current User Is Authenticated](https://laravel.com/docs/8.x/authentication#determining-if-the-current-user-is-authenticated) <br>:book: [Blade: Authentication Directives](https://laravel.com/docs/8.x/blade#authentication-directives) <br>|
 | Auth Middleware |:book: [Protecting Routes](https://laravel.com/docs/8.x/authentication#protecting-routes) <br>|
 | **Database Basics** ||
-| Database Migrations |:book: [Database Migrations](https://laravel.com/docs/8.x/migrations) <br>|
+| Database Migrations |:book: [Database Migrations](https://laravel.com/docs/8.x/migrations) <br> :clapper: [Laravel Migrations: Table Created but Foreign Key Failed?](https://www.youtube.com/watch?v=DWzUBpsEEHY) <br> [More videos](videos/database-migrations.md) |
 | Basic Eloquent Model and MVC: Controller -> Model -> View |:book: [Eloquent: Getting Started](https://laravel.com/docs/8.x/eloquent) <br>|
-| Eloquent Relationships: belongsTo / hasMany / belongsToMany |:book: [Eloquent Relationships: One-to-Many](https://laravel.com/docs/8.x/eloquent-relationships#one-to-many) <br>:book: [Eloquent Relationships: BelongsTo](https://laravel.com/docs/8.x/eloquent-relationships#one-to-many-inverse) <br>:book: [Eloquent Relationships: Many-to-Many](https://laravel.com/docs/8.x/eloquent-relationships#many-to-many) <br>|
-| Eager Loading and N+1 Query Problem |:book: [Relationships: Eager Loading](https://laravel.com/docs/8.x/eloquent-relationships#eager-loading) <br>|
+| Eloquent Relationships: belongsTo / hasMany / belongsToMany |:book: [Eloquent Relationships: One-to-Many](https://laravel.com/docs/8.x/eloquent-relationships#one-to-many) <br>:book: [Eloquent Relationships: BelongsTo](https://laravel.com/docs/8.x/eloquent-relationships#one-to-many-inverse) <br>:book: [Eloquent Relationships: Many-to-Many](https://laravel.com/docs/8.x/eloquent-relationships#many-to-many) <br> :clapper: [How to Safely Change DB Relations in Live Laravel Project?](https://www.youtube.com/watch?v=nRmoywPJRdM) |
+| Eager Loading and N+1 Query Problem |:book: [Relationships: Eager Loading](https://laravel.com/docs/8.x/eloquent-relationships#eager-loading) <br> :clapper: [Laravel N+1 Query Detector: Don't Forget Eager Loading](https://www.youtube.com/watch?v=MbN7BIcUnPA) <br>|
 | **Full Simple CRUD** ||
-| Route Resource and Resourceful Controllers |:book: [Laravel Resource Controllers](https://laravel.com/docs/8.x/controllers#resource-controllers) <br>:page_facing_up: [Simple Laravel CRUD with Resource Controllers [digitalocean.com]](https://www.digitalocean.com/community/tutorials/simple-laravel-crud-with-resource-controllers) <br>|
-| Forms, Validation and Form Requests |:book: [Laravel Validation](https://laravel.com/docs/8.x/validation) <br>|
-| File Uploads and Storage Folder Basics |:book: [Filesystem: File Uploads](https://laravel.com/docs/8.x/filesystem#file-uploads) <br>|
+| Route Resource and Resourceful Controllers |:book: [Laravel Resource Controllers](https://laravel.com/docs/8.x/controllers#resource-controllers) <br>:page_facing_up: [Simple Laravel CRUD with Resource Controllers [digitalocean.com]](https://www.digitalocean.com/community/tutorials/simple-laravel-crud-with-resource-controllers) <br> :clapper: [Laravel Nested Resource Controllers: Two-Level Deep](https://www.youtube.com/watch?v=9R_9Xe3Fgnw) <br> :clapper: [More videos](videos/route-resource-resourceful-controllers.md) <br>|
+| Forms, Validation and Form Requests |:book: [Laravel Validation](https://laravel.com/docs/8.x/validation) <br> :clapper: [New in Laravel 6.13: Format Validation Error Field Name](https://www.youtube.com/watch?v=KD1SqLO58eE) :clapper: [More videos](videos/forms-validation-requests.md) |
+| File Uploads and Storage Folder Basics |:book: [Filesystem: File Uploads](https://laravel.com/docs/8.x/filesystem#file-uploads) <br> :clapper: [Laravel: How to Upload File During User Registration](https://www.youtube.com/watch?v=xyQT2pnv_4E) <br> [More videos](videos/file-uploads-and-storage-folder-basics.md) <br> |
 | Table Pagination |:book: [Database Pagination](https://laravel.com/docs/8.x/pagination) <br>|
 
 
@@ -61,46 +61,46 @@ __Link icons: :book: Official Docs :clapper: Video :page_facing_up: Article :cap
 
 | Topic | Learning Links |
 | ----- | ----- |
-| **Routing Advanced** ||
-| Route Model Binding |:book: [Route Model Binding](https://laravel.com/docs/8.x/routing#route-model-binding) <br>:clapper: [Laravel Route Model Binding: All You Need To Know](https://www.youtube.com/watch?v=6dEfxGLgevM) <br>|
+| **Routing Advanced** | :clapper: [Laravel: 8 Tips for Advanced Routing](https://www.youtube.com/watch?v=_BIhuX8owTo) <br> :clapper: [More videos](videos/routing-advanced.md) <br> |
+| Route Model Binding |:book: [Route Model Binding](https://laravel.com/docs/8.x/routing#route-model-binding) <br>:clapper: [Laravel Route Model Binding: All You Need To Know](https://www.youtube.com/watch?v=6dEfxGLgevM) <br> :clapper: [More videos](videos/route-model-binding.md)|
 | Route Redirect |:book: [Redirect Routes](https://laravel.com/docs/8.x/routing#redirect-routes) <br>|
 | **Middleware** ||
 | Create Custom Middleware Class |:book: [Defining Middleware](https://laravel.com/docs/8.x/middleware#defining-middleware) <br>|
 | **Database Advanced** ||
-| Database Seeders and Factories |:book: [Database: Seeding](https://laravel.com/docs/8.x/seeding) <br>:book: [Defining Model Factories](https://laravel.com/docs/8.x/database-testing#defining-model-factories) <br>|
-| Eloquent Query Scopes |:book: [Eloquent: Query Scopes](https://laravel.com/docs/8.x/eloquent#query-scopes) <br>|
-| Polymorphic relationships |:book: [Polymorphic Relationships](https://laravel.com/docs/8.x/eloquent-relationships#polymorphic-relationships) <br>|
+| Database Seeders and Factories |:book: [Database: Seeding](https://laravel.com/docs/8.x/seeding) <br>:book: [Defining Model Factories](https://laravel.com/docs/8.x/database-testing#defining-model-factories) <br> :clapper: [Laravel Factories: Generate and Re-use Fake Records](https://www.youtube.com/watch?v=MHBDUJ51Pqs) <br> :clapper: [More videos](videos/database-seeders-and-factories.md)|
+| Eloquent Query Scopes |:book: [Eloquent: Query Scopes](https://laravel.com/docs/8.x/eloquent#query-scopes) <br> :clapper: [Same Eloquent Where Condition? Refactor into Local Scopes](https://www.youtube.com/watch?v=90xGUIuZsHE) <br>|
+| Polymorphic relationships |:book: [Polymorphic Relationships](https://laravel.com/docs/8.x/eloquent-relationships#polymorphic-relationships) <br> :clapper: [Laravel.io Portal: Polymorphic Relations Example](https://www.youtube.com/watch?v=EjJaNGW7vAg) <br>|
 | Eloquent Accessors and Mutators |:book: [Accessors & Mutators](https://laravel.com/docs/8.x/eloquent-mutators#accessors-and-mutators) <br>|
 | Eloquent Collections |:book: [Eloquent Collections](https://laravel.com/docs/8.x/eloquent-collections) <br>:book: [General Laravel Collections](https://laravel.com/docs/8.x/collections) <br>|
 | Soft Deletes |:book: [Soft Deleting](https://laravel.com/docs/8.x/eloquent#soft-deleting) <br>|
 | **Auth Advanced** ||
-| Authorization: Roles/Permissions, Gates, Policies |:book: [Authorization](https://laravel.com/docs/8.x/authorization) <br>:clapper: [Laravel Roles and Permissions: All CORE Things You Need To Know](https://www.youtube.com/watch?v=kZOgH3-0Bko) <br>|
+| Authorization: Roles/Permissions, Gates, Policies |:book: [Authorization](https://laravel.com/docs/8.x/authorization) <br>:clapper: [Laravel Roles and Permissions: All CORE Things You Need To Know](https://www.youtube.com/watch?v=kZOgH3-0Bko) <br> [More videos](videos/authorization-roles-permissions-gates-policies.md)|
 | Authorization: Extra Packages - Spatie Permission, Bouncer, etc |:clapper: [Spatie Laravel Permission: Example Project Review](https://www.youtube.com/watch?v=NgToi0uiMNQ) <br>:page_facing_up: [Two Best Laravel Packages to Manage Roles/Permissions](https://laravel-news.com/two-best-roles-permissions-packages) <br>:book: [spatie/laravel-permission](https://github.com/spatie/laravel-permission) <br>:book: [JosephSilber/bouncer](https://github.com/JosephSilber/bouncer) <br>|
-| Authentication: Email Verification |:book: [Email Verification](https://laravel.com/docs/8.x/verification) <br>|
+| Authentication: Email Verification |:book: [Email Verification](https://laravel.com/docs/8.x/verification) <br> :clapper: [How to Translate/Customize Laravel Auth Default Emails](https://www.youtube.com/watch?v=c01k5Zo_CuI) |
 | **File Uploads Advanced** |:capital_abcd: [File Uploads in Laravel](https://laraveldaily.teachable.com/p/file-uploads-in-laravel) <br>|
 | Drivers and Disks, Example of Amazon S3 |:book: [File Storage](https://laravel.com/docs/8.x/filesystem) <br>:clapper: [Laravel: How to Upload Files to Amazon S3](https://www.youtube.com/watch?v=xZQM9q_QxMA) <br>|
-| Extra Packages: Spatie Medialibrary, Intervention Image, etc |:book: [spatie/laravel-medialibrary](https://github.com/spatie/laravel-medialibrary) <br>:book: [intervention/image](https://github.com/Intervention/image) <br>|
-| **API Basics** |:capital_abcd: [How to Create Laravel API](https://laraveldaily.teachable.com/p/how-to-create-laravel-api) <br>|
-| API Routes and Controllers |:book: [API Resource Routes](https://laravel.com/docs/8.x/controllers#api-resource-routes) <br>:book: [Default Route Files](https://laravel.com/docs/8.x/routing#the-default-route-files) <br>|
+| Extra Packages: Spatie Medialibrary, Intervention Image, etc |:book: [spatie/laravel-medialibrary](https://github.com/spatie/laravel-medialibrary) <br>:book: [intervention/image](https://github.com/Intervention/image) <br> :clapper: [Spatie Media Library Pro: Laravel File Uploads with Great UX [REVIEW]](https://www.youtube.com/watch?v=oqW6vlJgXYE) <br> :clapper: [More videos](videos/file-upload-extra-packages.md) <br>|
+| **API Basics** |:capital_abcd: [How to Create Laravel API](https://laraveldaily.teachable.com/p/how-to-create-laravel-api) <br> :clapper: [Create Model with API Controller - in one Artisan Command](https://www.youtube.com/watch?v=DZw2wKzfRVU) <br> [Laravel API: Be Careful When Doing Changes](https://www.youtube.com/watch?v=yXnIW4DkuHQ) <br>|
+| API Routes and Controllers |:book: [API Resource Routes](https://laravel.com/docs/8.x/controllers#api-resource-routes) <br>:book: [Default Route Files](https://laravel.com/docs/8.x/routing#the-default-route-files) <br> :clapper: [Junior Code Review: Simple Laravel API - in 5 Different Ways](https://www.youtube.com/watch?v=MxQJlFUYO30) <br>|
 | Working with API Clients: Postman or Alternatives |:book: [Postman API Client](https://www.postman.com/product/api-client/) <br>|
-| API Eloquent Resources |:book: [Eloquent: API Resources](https://laravel.com/docs/8.x/eloquent-resources) <br>|
-| API Auth with Sanctum |:book: [Laravel Sanctum](https://laravel.com/docs/8.x/sanctum) <br>|
+| API Eloquent Resources |:book: [Eloquent: API Resources](https://laravel.com/docs/8.x/eloquent-resources) <br> :clapper: [Laravel API Result: Add Fields with Map or Appends](https://www.youtube.com/watch?v=FNU3gYgiEgQ) <br>|
+| API Auth with Sanctum |:book: [Laravel Sanctum](https://laravel.com/docs/8.x/sanctum) <br> :clapper: [Laravel API Auth with Sanctum and API Tokens](https://www.youtube.com/watch?v=gyWLxpYWxFQ)<br> :clapper: [More videos](videos/api-auth-with-sanctum.md)<br>|
 | API Error Handling and Status Codes |:clapper: [Laravel API 404 Error: Customize Exception Message](https://www.youtube.com/watch?v=SlBJrLnyoMk) <br>:page_facing_up: [HTTP Status Codes](https://httpstatuses.com/) <br>|
 | **Debugging Errors** ||
 | Log Files in Laravel |:book: [Logging](https://laravel.com/docs/8.x/logging) <br>|
 | Try-Catch and Laravel Exceptions |:book: [Error Handling](https://laravel.com/docs/8.x/errors) <br>:clapper: [Exceptions in Laravel: Why/How to Use and Create Your Own](https://www.youtube.com/watch?v=RTTXZVIL6tw) <br>|
 | Local Debugging Tools: Debugbar, Telescope, Ray |:book: [barryvdh/laravel-debugbar](https://github.com/barryvdh/laravel-debugbar) <br>:book: [Laravel Telescope](https://laravel.com/docs/8.x/telescope) <br>:book: [Spatie Ray (Premium Tool)](https://myray.app/) <br>:clapper: [Debug Eloquent Queries from API: Laravel Telescope](https://www.youtube.com/watch?v=SR3RzIfeozI) <br>:clapper: [Spatie Ray: Laravel Debugging with Pleasure](https://www.youtube.com/watch?v=n4pMxyAXeqY) <br>|
-| Customizing Error Pages and Messages |:book: [Custom HTTP Error Pages](https://laravel.com/docs/8.x/errors#custom-http-error-pages) <br>:clapper: [Laravel Error Pages: Change Text or Customize Layouts](https://www.youtube.com/watch?v=iMAFUi6Z57k) <br>|
+| Customizing Error Pages and Messages |:book: [Custom HTTP Error Pages](https://laravel.com/docs/8.x/errors#custom-http-error-pages) <br>:clapper: [Laravel Error Pages: Change Text or Customize Layouts](https://www.youtube.com/watch?v=iMAFUi6Z57k) <br> :clapper: [New in Laravel 8.26: Override 404 Page with Route Missing](https://www.youtube.com/watch?v=nvDCQDkcjN0) <br>|
 | (optional) Third Party Bug Trackers: Bugsnag, Flare, Sentry, Rollbar |:book: [Bugsnag Laravel](https://docs.bugsnag.com/platforms/php/laravel/) <br>:book: [Flare Homepage](https://flareapp.io/) <br>:book: [Sentry Laravel](https://docs.sentry.io/platforms/php/guides/laravel/) <br>:book: [Rollbar Laravel](https://docs.rollbar.com/docs/laravel) <br>:clapper: [Bug Tracking in Laravel: Bugsnag vs Flare [Demo/Review]](https://www.youtube.com/watch?v=88UqUXhWwGA) <br>|
-| **Sending Email** ||
+| **Sending Email** | :clapper: [Laravel: 3 Ways to Send a Welcome Email (Controller vs Observer vs Events)](https://www.youtube.com/watch?v=ZWzH6SOzjhI) |
 | Mailables and Mail Facade |:book: [Mail & Mailables](https://laravel.com/docs/8.x/mail) <br>|
 | Configure Drivers/Services: Mailgun, Mailtrap, etc |:page_facing_up: [How to Send Email From Laravel, and Why We Need 3rd Party Providers For It](https://laraveldaily.com/how-to-send-email-from-laravel-and-why-we-need-3rd-party-providers-for-it/) <br>:book: [Mail: Drivers Prerequisites](https://laravel.com/docs/8.x/mail#driver-prerequisites) <br>|
-| Notifications System: Email, SMS, Slack, etc. |:book: [Notifications](https://laravel.com/docs/8.x/notifications) <br>|
-| **Automated Testing with PHPUnit** ||
-| "Smoke" Tests to Check if Pages are Loading |:book: [Testing: Getting Started](https://laravel.com/docs/8.x/testing) <br>:capital_abcd: [Laravel: PHPUnit Testing for Beginners](https://laraveldaily.teachable.com/p/laravel-phpunit-testing-for-beginners) <br>|
+| Notifications System: Email, SMS, Slack, etc. |:book: [Notifications](https://laravel.com/docs/8.x/notifications) <br> :clapper: [Laravel Notifications: "Database" Driver - Demo Project](https://www.youtube.com/watch?v=5DREuAvFnps)|
+| **Automated Testing with PHPUnit** | :clapper: [Why People (Don't) Write Automated Tests?](https://www.youtube.com/watch?v=aKgUkYVvqFE) <br>|
+| "Smoke" Tests to Check if Pages are Loading |:book: [Testing: Getting Started](https://laravel.com/docs/8.x/testing) <br>:capital_abcd: [Laravel: PHPUnit Testing for Beginners](https://laraveldaily.teachable.com/p/laravel-phpunit-testing-for-beginners) <br> :clapper: [PHPUnit in Laravel: Simple Example of Why/How to Test](https://www.youtube.com/watch?v=DRhhfy2sG1E) <br> |
 | Configure Testing Database and Test CRUD Operations |:book: [Database Testing](https://laravel.com/docs/8.x/database-testing) <br>|
 | **Deployment and Version Control** ||
-| Git Version Control |:book: [Git](https://git-scm.com/) <br>:clapper: [Git in Laravel. Part 1 - Branches: Main, Develop and Feature](https://www.youtube.com/watch?v=AmScEC-_72I) <br>|
+| Git Version Control |:book: [Git](https://git-scm.com/) <br>:clapper: [Git in Laravel. Part 1 - Branches: Main, Develop and Feature](https://www.youtube.com/watch?v=AmScEC-_72I) <br> :clapper: [More videos](videos/git-version-control.md|
 | Deployment on Live Servers |:book: [Deployment](https://laravel.com/docs/8.x/deployment) <br>:page_facing_up: [How to Deploy Laravel Projects to Live Server: The Ultimate Guide](https://laraveldaily.com/how-to-deploy-laravel-projects-to-live-server-the-ultimate-guide/) <br>:page_facing_up: [What Server is Needed to Deploy Laravel Projects](https://laraveldaily.com/what-server-is-needed-to-deploy-laravel-projects/) <br>:clapper: [How we Deploy Laravel: Branches, Staging Servers, Forge and Envoyer](https://www.youtube.com/watch?v=8DVuVftFZcQ) <br>|
 
 
@@ -126,7 +126,7 @@ __Link icons: :book: Official Docs :clapper: Video :page_facing_up: Article :cap
 | **Database/Eloquent Extra Features** ||
 | Model Observers |:book: [Eloquent Observers](https://laravel.com/docs/8.x/eloquent#observers) <br>:clapper: [Laravel Model: Check if Any Field Was Changed](https://www.youtube.com/watch?v=_xluet13xxE) <br>:clapper: [Eloquent Observers or Events Listeners? Which is Better?](https://www.youtube.com/watch?v=DvoaU6cQQHM) <br>|
 | Raw Database Queries |:book: [Query Builder: Raw Expressions](https://laravel.com/docs/8.x/queries#raw-expressions) <br>|
-| All Eloquent Features |:book: [All About Eloquent](https://laravel.com/docs/8.x/eloquent) <br>:capital_abcd: [Eloquent: Expert Level](https://laraveldaily.teachable.com/p/laravel-eloquent-expert-level) <br>:page_facing_up: [20 Laravel Eloquent Tips and Tricks](https://laravel-news.com/eloquent-tips-tricks) <br>|
+| All Eloquent Features |:book: [All About Eloquent](https://laravel.com/docs/8.x/eloquent) <br>:capital_abcd: [Eloquent: Expert Level](https://laraveldaily.teachable.com/p/laravel-eloquent-expert-level) <br>:page_facing_up: [20 Laravel Eloquent Tips and Tricks](https://laravel-news.com/eloquent-tips-tricks) <br> :clapper: [Laravel Collections: 5 Methods with Real Examples](https://www.youtube.com/watch?v=isAz2GduuA0) <br> [More videos](videos/all-eloquent-features.md) <br>|
 | **Various Extra Laravel Features** ||
 | Custom Blade Directives |:book: [Extending Blade](https://laravel.com/docs/8.x/blade#extending-blade) <br>|
 | Events and Listeners |:book: [Events and Listeners](https://laravel.com/docs/8.x/events) <br>:clapper: [Laravel: 3 Ways to Send a Welcome Email (Controller vs Observer vs Events)](https://www.youtube.com/watch?v=ZWzH6SOzjhI) <br>:clapper: [Laravel: Why Observers and Event Listeners are "Risky"](https://www.youtube.com/watch?v=A3bmLo77e5M) <br>|
@@ -146,7 +146,7 @@ __Link icons: :book: Official Docs :clapper: Video :page_facing_up: Article :cap
 | Upload Files via API |:page_facing_up: [Laravel API: How to Upload File from Vue.js](https://blog.quickadminpanel.com/laravel-api-how-to-upload-file-from-vue-js/) <br>|
 | Generate API Documentation |:page_facing_up: [Laravel API Documentation with OpenAPI/Swagger](https://blog.quickadminpanel.com/laravel-api-documentation-with-openapiswagger/) <br>:clapper: [Scribe: New Package for Laravel API Documentation](https://www.youtube.com/watch?v=PjwGI8c2IfA) <br>|
 | API Versioning |:page_facing_up: [Versioning your REST API with Laravel](https://codimth.com/blog/web/laravel/versioning-your-rest-api-laravel) <br>:clapper: [Versioning your API: from V1 to V2 and Beyond [video from my course]](https://laraveldaily.teachable.com/courses/how-to-create-laravel-api/lectures/17568998) <br>|
-| API with OAuth and Laravel Passport |:book: [Laravel Passport](https://laravel.com/docs/8.x/passport) <br>|
+| API with OAuth and Laravel Passport |:book: [Laravel Passport](https://laravel.com/docs/8.x/passport) <br> :clapper: [Laravel API Auth Demo: Passport, oAuth and Sanctum](https://www.youtube.com/watch?v=8myQdPL8I1s)|
 | Only-API Projects with Front-end like Vue.js |:capital_abcd: [Vue.js + Laravel: CRUD with SPA](https://laraveldaily.teachable.com/p/vue-laravel-crud-spa) <br>|
 | Only-API Projects with Mobile Apps |:page_facing_up: [Using Sanctum to authenticate a mobile app](https://laravel-news.com/using-sanctum-to-authenticate-a-mobile-app) <br>|
 | **(optional) Starter Kits: Laravel Jetstream and Fortify** ||
@@ -194,5 +194,3 @@ __Link icons: :book: Official Docs :clapper: Video :page_facing_up: Article :cap
 | **Ensuring Code Quality** ||
 | Writing Testable Code |:page_facing_up: [How to write testable code](https://dev.to/ddarrko/how-to-write-more-testable-code-oi7) <br>:page_facing_up: [Refactoring towards testability](https://madewithlove.com/blog/software-engineering/refactoring-untestable-code-towards-testability/) <br>|
 | Continuous Integration and Continuous Delivery (CI/CD) |:page_facing_up: [How to create a CI/CD for a Laravel application using GitHub Actions](https://blog.logrocket.com/how-to-create-a-ci-cd-for-a-laravel-application-using-github-actions/) <br>:page_facing_up: [Configure Laravel 8 for CI/CD with Jenkins and GitHub — Part 1](https://faun.pub/configure-laravel-8-for-ci-cd-with-jenkins-and-github-part-1-58b9be304292) <br>:page_facing_up: [Build, Test, and Deploy Your Laravel Application With GitHub Actions](https://www.twilio.com/blog/build-test-deploy-laravel-application-github-actions) <br>|
-
-
