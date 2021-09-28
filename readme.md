@@ -100,7 +100,7 @@ __Link icons: :book: Official Docs :clapper: Video :page_facing_up: Article :cap
 | "Smoke" Tests to Check if Pages are Loading |:book: [Testing: Getting Started](https://laravel.com/docs/8.x/testing) <br>:capital_abcd: [Laravel: PHPUnit Testing for Beginners](https://laraveldaily.teachable.com/p/laravel-phpunit-testing-for-beginners) <br> :clapper: [PHPUnit in Laravel: Simple Example of Why/How to Test](https://www.youtube.com/watch?v=DRhhfy2sG1E) <br> |
 | Configure Testing Database and Test CRUD Operations |:book: [Database Testing](https://laravel.com/docs/8.x/database-testing) <br>|
 | **Deployment and Version Control** ||
-| Git Version Control |:book: [Git](https://git-scm.com/) <br>:clapper: [Git in Laravel. Part 1 - Branches: Main, Develop and Feature](https://www.youtube.com/watch?v=AmScEC-_72I) <br> :clapper: [More videos](videos/git-version-control.md|
+| Git Version Control |:book: [Git](https://git-scm.com/) <br>:clapper: [Git in Laravel. Part 1 - Branches: Main, Develop and Feature](https://www.youtube.com/watch?v=AmScEC-_72I) <br> :clapper: [More videos](videos/git-version-control.md)|
 | Deployment on Live Servers |:book: [Deployment](https://laravel.com/docs/8.x/deployment) <br>:page_facing_up: [How to Deploy Laravel Projects to Live Server: The Ultimate Guide](https://laraveldaily.com/how-to-deploy-laravel-projects-to-live-server-the-ultimate-guide/) <br>:page_facing_up: [What Server is Needed to Deploy Laravel Projects](https://laraveldaily.com/what-server-is-needed-to-deploy-laravel-projects/) <br>:clapper: [How we Deploy Laravel: Branches, Staging Servers, Forge and Envoyer](https://www.youtube.com/watch?v=8DVuVftFZcQ) <br>|
 
 
