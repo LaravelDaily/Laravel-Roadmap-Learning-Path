@@ -13,11 +13,11 @@ If you want to add a topic, link, or any other suggestion, please open Issues or
 ## Beginner Level
 Create your very first simple Laravel project
 
-__Link icons: :book: Official Docs :clapper: Video :page_facing_up: Article :capital_abcd: Course__ 
+__Link icons: :book: Official Docs :clapper: Video :page_facing_up: Article :capital_abcd: Course :question: Test__ 
 
 | Topic | Learning Links |
 | ----- | ----- |
-| **Routing and Controllers: Basics** | :clapper: [Laravel 8 Routing: Important Change You Need to Know](https://www.youtube.com/watch?v=MfE1tnMG6fE) |
+| **Routing and Controllers: Basics** | :question: [Let's Test Your Laravel Routing Skills: Complete 12 Tasks](https://www.youtube.com/watch?v=pENlD3izA3Q) |
 | Callback Functions and Route::view() |:book: [Basic Routing](https://laravel.com/docs/8.x/routing#basic-routing) <br>:book: [View Routes](https://laravel.com/docs/8.x/routing#view-routes) <br>|
 | Routing to a Single Controller Method |:book: [Basic Controllers with Routes](https://laravel.com/docs/8.x/controllers#basic-controllers) <br>|
 | Route Parameters |:book: [Route Parameters](https://laravel.com/docs/8.x/routing#route-parameters) <br>|
