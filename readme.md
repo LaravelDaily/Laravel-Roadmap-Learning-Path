@@ -75,7 +75,7 @@ __Link icons: :book: Official Docs :clapper: Video :page_facing_up: Article :cap
 | **Middleware** ||
 | Create Custom Middleware Class |:book: [Defining Middleware](https://laravel.com/docs/middleware#defining-middleware) <br>|
 | **Database Advanced** ||
-| Database Seeders and Factories |:book: [Database: Seeding](https://laravel.com/docs/seeding) <br>:book: [Defining Model Factories](https://laravel.com/docs/database-testing#defining-model-factories) <br> :clapper: [Laravel Factories: Generate and Re-use Fake Records](https://www.youtube.com/watch?v=MHBDUJ51Pqs) <br> :clapper: [More videos](videos/database-seeders-and-factories.md)|
+| Database Seeders and Factories |:book: [Database: Seeding](https://laravel.com/docs/seeding) <br>:book: [Defining Model Factories](https://laravel.com/docs/eloquent-factories#defining-model-factories) <br> :clapper: [Laravel Factories: Generate and Re-use Fake Records](https://www.youtube.com/watch?v=MHBDUJ51Pqs) <br> :clapper: [More videos](videos/database-seeders-and-factories.md)|
 | Eloquent Query Scopes |:book: [Eloquent: Query Scopes](https://laravel.com/docs/eloquent#query-scopes) <br> :clapper: [Same Eloquent Where Condition? Refactor into Local Scopes](https://www.youtube.com/watch?v=90xGUIuZsHE) <br>|
 | Polymorphic relationships |:book: [Polymorphic Relationships](https://laravel.com/docs/eloquent-relationships#polymorphic-relationships) <br> :clapper: [Laravel.io Portal: Polymorphic Relations Example](https://www.youtube.com/watch?v=EjJaNGW7vAg) <br>|
 | Eloquent Accessors and Mutators |:book: [Accessors & Mutators](https://laravel.com/docs/eloquent-mutators#accessors-and-mutators) <br>|
