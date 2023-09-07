@@ -23,7 +23,7 @@ Bir konu, bağlantı veya başka bir öneri eklemek istiyorsanız, lütfen Sorun
 
 Bağlantı simgeleri: :book: Resmi Belgeler :clapper: Video :page_facing_up: Makale :capital_abcd: Kurs :question: Test__ 
 
-| Kobnu | Eğitim Bağlantısı |
+| Konu | Eğitim Bağlantısı |
 | ----- | ----- |
 | **Routing  ve Controller: Temelleri** | :question: [Let's Test Your Laravel Routing Skills: Complete 12 Tasks](https://www.youtube.com/watch?v=pENlD3izA3Q) |
 | Callback Functions and Route::view() |:book: [Basic Routing](https://laravel.com/docs/routing#basic-routing) <br>:book: [View Routes](https://laravel.com/docs/routing#view-routes) <br>|
