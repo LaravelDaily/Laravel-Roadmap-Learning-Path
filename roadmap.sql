@@ -326,7 +326,7 @@ INSERT INTO `links` (`id`, `title`, `url`, `created_at`, `updated_at`, `deleted_
 (24, 'Filesystem: File Uploads', 'https://laravel.com/docs/8.x/filesystem#file-uploads', '2021-07-13 09:35:38', '2021-07-13 09:36:02', NULL, 3, 0),
 (25, 'Database Pagination', 'https://laravel.com/docs/8.x/pagination', '2021-07-13 09:37:07', '2021-07-13 09:37:07', NULL, 3, 0),
 (26, 'Route Parameters', 'https://laravel.com/docs/8.x/routing#route-parameters', '2021-07-14 08:31:33', '2021-07-14 08:31:33', NULL, 3, 0),
-(27, 'Names Routes', 'https://laravel.com/docs/8.x/routing#named-routes', '2021-07-17 05:59:20', '2021-07-17 05:59:20', NULL, 3, 0),
+(27, 'Named Routes', 'https://laravel.com/docs/8.x/routing#named-routes', '2021-07-17 05:59:20', '2021-07-17 05:59:20', NULL, 3, 0),
 (28, 'Route Groups', 'https://laravel.com/docs/8.x/routing#route-groups', '2021-07-17 05:59:43', '2021-07-17 05:59:43', NULL, 3, 0),
 (29, 'Route Model Binding', 'https://laravel.com/docs/8.x/routing#route-model-binding', '2021-07-17 06:00:09', '2021-07-17 06:00:09', NULL, 3, 0),
 (30, 'Redirect Routes', 'https://laravel.com/docs/8.x/routing#redirect-routes', '2021-07-17 06:00:35', '2021-07-17 06:00:47', NULL, 3, 0),
